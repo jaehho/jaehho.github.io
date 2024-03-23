@@ -74,14 +74,7 @@
       "name": "Programming",
       "level": "Advanced",
       "icon": "",
-      "keywords": [
-        "Python",
-        "Matlab",
-        "C",
-        "C++",
-        "Git",
-        "Verilog"
-      ]
+      "keywords": ["Python", "Matlab", "C", "C++", "Git", "Verilog"]
     },
     {
       "name": "Technology",
@@ -119,18 +112,12 @@
     {
       "name": "Robotics",
       "icon": "",
-      "keywords": [
-        "Prosthetics",
-        "Assistive Devices"
-      ]
+      "keywords": ["Prosthetics", "Assistive Devices"]
     },
     {
       "name": "Game Development",
       "icon": "",
-      "keywords": [
-        "Unity",
-        "C#"
-      ]
+      "keywords": ["Unity", "C#"]
     }
   ],
   "references": [],

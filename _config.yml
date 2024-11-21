@@ -24,9 +24,11 @@ author:
   bio              : *description
   location         : "NYC"
   employer         : "The Cooper Union"
-  uri              : # URL
+  employer_url     : "https://www.cooper.edu"
+  uri              : 
   email            : "jaeho2025@gmail.com" 
   github           : "jaehho"
+  linkedin         : "jaeho-cho"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:

@@ -11,12 +11,6 @@ header: "/images/headshot.JPG"
 
 ---
 
-# Jaeho Cho
-
-New York City, NY • jaeho2025@gmail.com • +1 (201) 406-5974 • [jaehho.github.io](https://jaehho.github.io)
-
----
-
 ## EDUCATION
 
 **The Cooper Union for the Advancement of Science and Art**  

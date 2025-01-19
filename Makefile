@@ -1,28 +1,25 @@
-# Variables
-JEKYLL = jekyll
-SITE_DIR = _site
-PORT = 4000
+SHELL := /bin/bash
 
-.PHONY: default help serve build clean doctor
+# Common variables
+DOCKER_COMPOSE := docker-compose
 
-default: serve
+help: ## Show this help message
+	@echo "Available targets:"
+	@echo "=================="
+	@grep -E '(^[a-zA-Z_-]+:.*?## .*$$|^# Section: )' $(MAKEFILE_LIST) | \
+		awk 'BEGIN {FS = ":.*?## "}; \
+		     /^# Section:/ {gsub("^# Section: ", ""); print "\n\033[1;35m" $$0 "\033[0m"}; \
+		     /^[a-zA-Z_-]+:/ {printf "  \033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
-# Show this help message
-help:
-	@cat $(MAKEFILE_LIST) | docker run --rm -i xanders/make-help
+serve: ## Start the development server
+	@$(DOCKER_COMPOSE) up --build
+	@$(MAKE) teardown
 
-# Builds site any time a source file changes and serves it locally
-serve: clean
-	$(JEKYLL) serve --watch --livereload --port $(PORT) --incremental
+docker_build: ## Build Docker images
+	@$(DOCKER_COMPOSE) build
 
-# Performs a one off build to _site
-build: clean
-	$(JEKYLL) build
+chownme: ## Change ownership of files to current user
+	@sudo chown -R $(shell whoami) ./
 
-# Removes all generated files: destination folder, metadata file, Sass and Jekyll caches
-clean:
-	$(JEKYLL) clean
-
-# Outputs any deprecation or configuration issues.
-doctor:
-	$(JEKYLL) doctor
+teardown: ## Stop Docker containers and clean up
+	@$(DOCKER_COMPOSE) down -t 1

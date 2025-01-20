@@ -1,7 +1,9 @@
 SHELL := /bin/bash
+DOCKER_COMPOSE := docker compose
+CONTAINER := jekyll
 
-# Common variables
-DOCKER_COMPOSE := docker-compose
+# Function to check if the container is running
+IS_RUNNING := $(shell $(DOCKER_COMPOSE) ps -q $(CONTAINER))
 
 help: ## Show this help message
 	@echo "Available targets:"
@@ -12,8 +14,31 @@ help: ## Show this help message
 		     /^[a-zA-Z_-]+:/ {printf "  \033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
 serve: ## Start the development server
-	@$(DOCKER_COMPOSE) up --build
+ifeq ($(IS_RUNNING),)
+	@$(DOCKER_COMPOSE) up -d
+endif
+	-@$(DOCKER_COMPOSE) exec $(CONTAINER) bash -c "bundle exec jekyll serve --watch --host 0.0.0.0"
+ifeq ($(IS_RUNNING),)
 	@$(MAKE) teardown
+endif
+
+build: ## One off build
+ifeq ($(IS_RUNNING),)
+	@$(DOCKER_COMPOSE) up -d
+endif
+	-@$(DOCKER_COMPOSE) exec $(CONTAINER) bash -c "bundle exec jekyll build"
+ifeq ($(IS_RUNNING),)
+	@$(MAKE) teardown
+endif
+
+clean: ## Clean up the site
+ifeq ($(IS_RUNNING),)
+	@$(DOCKER_COMPOSE) up -d
+endif
+	-@$(DOCKER_COMPOSE) exec $(CONTAINER) bash -c "bundle exec jekyll clean"
+ifeq ($(IS_RUNNING),)
+	@$(MAKE) teardown
+endif
 
 docker_build: ## Build Docker images
 	@$(DOCKER_COMPOSE) build

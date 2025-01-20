@@ -7,3 +7,5 @@ services:
       - "4000:4000"
     volumes:
       - .:/usr/src/app # Mount the current directory to /usr/src/app in the container
+    tty: true
+    stdin_open: true

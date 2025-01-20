@@ -13,7 +13,20 @@ help: ## Show this help message
 		     /^# Section:/ {gsub("^# Section: ", ""); print "\n\033[1;35m" $$0 "\033[0m"}; \
 		     /^[a-zA-Z_-]+:/ {printf "  \033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
-attach: ## Attach to the container
+# Section: Local
+serve: ## Start the development server
+	@bundle exec jekyll serve --watch --host
+
+build: ## One off build
+	@bundle exec jekyll build
+
+clean: ## Clean up the site
+	@bundle exec jekyll clean
+
+
+
+# Section: Docker
+docker_attach: ## Attach to the container
 ifeq ($(IS_RUNNING),)
 	@$(DOCKER_COMPOSE) up -d
 endif
@@ -22,7 +35,7 @@ ifeq ($(IS_RUNNING),)
 	@$(MAKE) teardown
 endif
 
-serve: ## Start the development server
+docker_serve: ## Start the development server
 ifeq ($(IS_RUNNING),)
 	@$(DOCKER_COMPOSE) up -d
 endif
@@ -31,7 +44,7 @@ ifeq ($(IS_RUNNING),)
 	@$(MAKE) teardown
 endif
 
-build: ## One off build
+docker_build: ## One off build
 ifeq ($(IS_RUNNING),)
 	@$(DOCKER_COMPOSE) up -d
 endif
@@ -40,7 +53,7 @@ ifeq ($(IS_RUNNING),)
 	@$(MAKE) teardown
 endif
 
-clean: ## Clean up the site
+docker_clean: ## Clean up the site
 ifeq ($(IS_RUNNING),)
 	@$(DOCKER_COMPOSE) up -d
 endif
@@ -49,7 +62,7 @@ ifeq ($(IS_RUNNING),)
 	@$(MAKE) teardown
 endif
 
-fix-host: ## Fix the static file host
+docker_fix-host: ## Fix the static file host
 ifeq ($(IS_RUNNING),)
 	@$(DOCKER_COMPOSE) up -d
 endif
@@ -59,11 +72,8 @@ ifeq ($(IS_RUNNING),)
 	@$(MAKE) teardown
 endif
 
-docker_build: ## Build Docker images
-	@$(DOCKER_COMPOSE) build
-
 chownme: ## Change ownership of files to current user
 	@sudo chown -R $(shell whoami) ./
 
-teardown: ## Stop Docker containers and clean up
+docker_teardown: ## Stop Docker containers and clean up
 	@$(DOCKER_COMPOSE) down -t 1

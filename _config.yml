@@ -1,78 +1,91 @@
 # Basic Site Settings
-locale                   : "en-US"
-title                    : "Jaeho Cho"
-title_separator          : "-"
-name                     : &name "Jaeho Cho"
-description              : &description "Electrical Engineering"
-url                      : https://jaehho.github.io
-baseurl                  : ""
-repository               : "jaehho/jaehho.github.io"
+locale              : "en-US"
+title               : "Jaeho Cho"
+title_separator     : "-"
+name                : &name "Jaeho Cho"
+description         : &description "Electrical Engineering"
+url                 : https://jaehho.github.io
+baseurl             : ""
+repository          : "jaehho/jaehho.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 author:
   # Biographic information
-  avatar           : "headshot.JPG"
-  name             : *name
-  bio              : *description
-  location         : "NYC"
-  employer         : "The Cooper Union"
-  employer_url     : "https://www.cooper.edu"
-  uri              : 
-  email            : "jaeho2025@gmail.com" 
-  github           : "jaehho"
-  linkedin         : "jaeho-cho"
+  avatar            : "headshot.JPG"
+  name              : *name
+  bio               : *description
+  location          : "NYC"
+  employer          : "The Cooper Union"
+  employer_url      : "https://www.cooper.edu"
+  uri               : 
+  email             : "jaeho2025@gmail.com" 
+  github            : "jaehho"
+  linkedin          : "jaeho-cho"
 
 # Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/
-breadcrumbs              : false # true, false (default)
-
+teaser              :  # filename of teaser fallback teaser image placed in /images/
+breadcrumbs         : false # true, false (default)
+image_path          : "/assets/images/"
 
 # Analytics
 analytics:
   google:
-    tracking_id          : "G-4VWP819GLG"
-
+    tracking_id     : "G-4VWP819GLG"
 
 # Reading Files
 include:
   - .htaccess
   - _pages
-  - files
 exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
+  # Project Documentation & Licensing Files
+  - README
+  - CHANGELOG
+  - LICENSE
+
+  # Dependency & Build System Files
+  - Gemfile
+  - Gemfile.lock
+  - package.json*
+  - Rakefile
+  - Makefile
+  - Capfile
+  - Gruntfile.js
+  - gulpfile.js
+
+  # Development & Temporary Files
+  - tmp
+  - log
+  - local
   - .bundle
-  - .github
+  - .asset-cache
   - .jekyll-assets-cache
   - .sass-cache
+
+  # Editor & Workspace Files
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+
+  # Source Code & Configuration Files
+  - config
+  - Dockerfile
+
+  # Jekyll Build & Third-party Libraries
+  - vendor/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+  # JavaScript & Asset Files
   - assets/js/_main.js
   - assets/js/plugins
   - assets/js/vendor
-  - CHANGELOG
-  - Capfile
-  - config
-  - Dockerfile
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - local
-  - log
-  - node_modules
-  - package.json*
-  - Rakefile
-  - README
-  - tmp
-  - vendor
-  - .venv
-  - Makefile
+
 keep_files:
   - .git
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
 
 # Conversion
 markdown: kramdown
@@ -80,7 +93,6 @@ highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: true
-
 
 # Markdown Processing
 kramdown:
@@ -93,13 +105,11 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
 # These settings control the types of collections used by the template
 collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
-
 
 # These settings control how pages and collections are included in the site
 defaults:
@@ -119,17 +129,14 @@ defaults:
       author_profile: true
       share: true
 
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-
 # Outputting
 permalink: /:categories/:title/
-timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
+timezone: America/New_York
 
 # Plugins
 plugins:
@@ -147,17 +154,6 @@ whitelist:
   - jekyll-sitemap
   - jemoji
 
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
   path: /categories/
@@ -165,9 +161,7 @@ tag_archive:
   type: liquid
   path: /tags/
 
-
 # HTML Compression
-# - http://jch.penibelst.de/
 compress_html:
   clippings: all
   ignore:

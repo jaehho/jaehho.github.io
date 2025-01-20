@@ -2,12 +2,12 @@
 layout: archive
 title: "CV"
 permalink: /cv/
-header: "/images/headshot.JPG"
+header: "/assets/images/headshot.JPG"
 ---
 
 {% include base_path %}
 
-<a href="/files/Jaeho Cho Resume.pdf" target="_blank">Download Resume</a>
+<a href="/assets/files/Jaeho Cho Resume.pdf" target="_blank">Download Resume</a>
 
 ---
 

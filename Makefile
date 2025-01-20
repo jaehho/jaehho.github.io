@@ -13,6 +13,15 @@ help: ## Show this help message
 		     /^# Section:/ {gsub("^# Section: ", ""); print "\n\033[1;35m" $$0 "\033[0m"}; \
 		     /^[a-zA-Z_-]+:/ {printf "  \033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
+attach: ## Attach to the container
+ifeq ($(IS_RUNNING),)
+	@$(DOCKER_COMPOSE) up -d
+endif
+	@$(DOCKER_COMPOSE) exec -it $(CONTAINER) bash
+ifeq ($(IS_RUNNING),)
+	@$(MAKE) teardown
+endif
+
 serve: ## Start the development server
 ifeq ($(IS_RUNNING),)
 	@$(DOCKER_COMPOSE) up -d
@@ -36,6 +45,16 @@ ifeq ($(IS_RUNNING),)
 	@$(DOCKER_COMPOSE) up -d
 endif
 	-@$(DOCKER_COMPOSE) exec $(CONTAINER) bash -c "bundle exec jekyll clean"
+ifeq ($(IS_RUNNING),)
+	@$(MAKE) teardown
+endif
+
+fix-host: ## Fix the static file host
+ifeq ($(IS_RUNNING),)
+	@$(DOCKER_COMPOSE) up -d
+endif
+	-@$(DOCKER_COMPOSE) exec $(CONTAINER) bash -c "bundle exec jekyll clean"
+	-@$(DOCKER_COMPOSE) exec $(CONTAINER) bash -c "bundle exec jekyll build --config _config.yml,_config.dev.yml"
 ifeq ($(IS_RUNNING),)
 	@$(MAKE) teardown
 endif

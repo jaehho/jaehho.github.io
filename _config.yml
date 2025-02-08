@@ -23,9 +23,13 @@ author:
   linkedin          : "jaeho-cho"
 
 # Site Settings
-teaser              :  # filename of teaser fallback teaser image placed in /images/
 breadcrumbs         : false # true, false (default)
 image_path          : "/assets/images/"
+navigation:
+  - title: "Portfolio"
+    url: /portfolio/
+  - title: "CV"
+    url: /cv/
 
 # Analytics
 analytics:
@@ -143,7 +147,6 @@ plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-sitemap
   - jemoji
 
 # Mimic GitHub Pages with --safe
@@ -151,7 +154,6 @@ whitelist:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
-  - jekyll-sitemap
   - jemoji
 
 category_archive:

@@ -1,12 +1,8 @@
 {% include base_path %}
 
-<a href="/sitemap/">Sitemap</a>
-
 <div class="page__footer-follow">
   <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
+    <li><strong>Follow:</strong></li>
     {% if site.author.github %}
       <li><a href="http://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
     {% endif %}
@@ -14,6 +10,5 @@
 </div>
 
 <div class="page__footer-copyright">
-  {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a><br>
-  Site last updated {{ "now" | date: '%Y-%m-%d' %}}
+  {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a><br>
 </div>

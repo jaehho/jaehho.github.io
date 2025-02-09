@@ -1,5 +1,5 @@
 ---
 title: "Marvin"
-excerpt: "Open-source, low-latency compliant robotic arms"
+excerpt: "Open-source robotic arms for human-robot interaction<br/><img src='/assets/images/Marvin.png'>"
 collection: portfolio
 ---

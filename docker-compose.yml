@@ -1,11 +1,8 @@
 services:
-  jekyll:
-    build:
-      context: . 
-    container_name: jekyll
-    ports:
-      - "4000:4000"
-    volumes:
-      - .:/usr/src/app # Mount the current directory to /usr/src/app in the container
-    tty: true
-    stdin_open: true
+  jekyll-site:
+    image: jekyll-site
+    build: .
+    volumes: [.:/usr/src/app]
+    ports: [4000:4000]
+    user: 1000:1000
+    environment: [JEKYLL_ENV=docker]

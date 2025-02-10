@@ -1,15 +1,6 @@
 {
-  "name": "jaehho.github.io",
-  "version": "1.0.0",
-  "description": "Jaeho Cho's Portfolio",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jaehho/jaehho.github.io.git"
-  },
-  "author": "Jaeho Cho",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jaehho/jaehho.github.io/issues"
-  },
-  "homepage": "https://github.com/jaehho/jaehho.github.io#readme"
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "1.4.0",
+    "prettier": "3.1.1"
+  }
 }

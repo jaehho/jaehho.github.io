@@ -18,15 +18,14 @@ education:
       - "Courses: Frequentist Machine Learning, Digital Signal Processing, Communication Theory, Computer Architecture, Integrated Circuit Engineering, Theoretical Neuroscience, Medical Imaging, Bio-Instrumentation & Sensing"
 
 experience:
-  - position: Research Intern
+  - position: Research Volunteer
     details: Neuroscience
     company: NYU Langone Health
     location: New York, NY
     start: June 2025
     end: Present
     bullets:
-      - Building a custom robotic bird to study vocal learning and social behavior in budgerigars, using ROS2 for robot control.
-      - Optimizing budgerigar vocalization analysis pipelines to extract acoustic features and cluster syllables.
+      - Analyzing budgerigar recordings to extract acoustic features and cluster syllables.
       - Developed a ROS2 system for automatic budgie tutoring and data collection, controlling a custom robotic bird optimized for tutoring.
   - position: Research Volunteer
     details: Ergonomics in Otolaryngology, Computer Vision in Operating Room
@@ -35,7 +34,8 @@ experience:
     start: Feb 2024
     end: Present
     bullets:
-      - Applying deep learning and computer vision to classify surgical instruments and phases in endoscopic sinus surgeries.
+      - Developing multi-camera computer vision model to integrate endoscopic video and external OR views.
+      - Used Ultralytics YOLO to classify surgical instruments and phases in endoscopic sinus surgeries.
       - Developed data-processing pipelines to interpret raw data from Xsens IMUs, analyzing the ergonomic stress on joints.
   - position: Data and AI Intern
     details: Hanwha TotalEnergies Petrochemical

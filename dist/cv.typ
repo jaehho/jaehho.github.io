@@ -43,15 +43,14 @@
 
 
 #work(
-  position: "Research Intern",
+  position: "Research Volunteer",
   details: "Neuroscience",
   company: "NYU Langone Health",
   location: "New York, NY",
   start-date: "June 2025",
   end-date: "Present",
 )
-- Building a custom robotic bird to study vocal learning and social behavior in budgerigars, using ROS2 for robot control.
-- Optimizing budgerigar vocalization analysis pipelines to extract acoustic features and cluster syllables.
+- Analyzing budgerigar recordings to extract acoustic features and cluster syllables.
 - Developed a ROS2 system for automatic budgie tutoring and data collection, controlling a custom robotic bird optimized for tutoring.
 
 
@@ -64,7 +63,8 @@
   start-date: "Feb 2024",
   end-date: "Present",
 )
-- Applying deep learning and computer vision to classify surgical instruments and phases in endoscopic sinus surgeries.
+- Developing multi-camera computer vision model to integrate endoscopic video and external OR views.
+- Used Ultralytics YOLO to classify surgical instruments and phases in endoscopic sinus surgeries.
 - Developed data-processing pipelines to interpret raw data from Xsens IMUs, analyzing the ergonomic stress on joints.
 
 

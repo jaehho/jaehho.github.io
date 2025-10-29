@@ -1,0 +1,80 @@
+#import "@local/cv:0.1.0": conf, header, edu, work, extracurricular
+
+#let name = "{{ name | typst_str }}"
+
+#show: conf.with(
+  author: name,
+  paper: "us-letter",
+  accent-color: "#000000",
+  font-size: 10pt,
+  paragraph-leading: 0.59em,
+  paragraph-spacing: 0.7em,
+  section-heading-margin-top: 0.5em,
+  section-heading-margin-bottom: 0.2em,
+  border-margin: 0.3in,
+)
+
+#header(
+  name: name,
+  location: "{{ location | typst_str }}",
+  phone: "{{ phone | typst_str }}",
+  email: "{{ email | typst_str }}",
+  linkedin: "{{ linkedin | typst_str }}",
+  website: "{{ website | typst_str }}"
+)
+
+== Education
+
+{% for e in education %}
+#edu(
+  institution: "{{ e.institution | typst_str }}",
+  location: "{{ e.location | typst_str }}",
+  start-date: "{{ e.start | typst_str }}",
+  end-date: "{{ e.end | typst_str }}",
+  degree: "{{ e.degree | typst_str }}",
+)
+{% for b in e.bullets -%}
+- {{ b | typst_str }}
+{% endfor %}
+
+{% endfor %}
+
+== Work Experience
+
+{% for w in experience %}
+#work(
+  position: "{{ w.position | typst_str }}",
+  details: "{{ w.details | default("") | typst_str }}",
+  company: "{{ w.company | typst_str }}",
+  location: "{{ w.location | typst_str }}",
+  start-date: "{{ w.start | typst_str }}",
+  end-date: "{{ w.end | typst_str }}",
+)
+{% for b in w.bullets -%}
+- {{ b | typst_str }}
+{% endfor %}
+
+{% endfor %}
+
+== Extracurricular Activities
+
+{% for x in extracurricular %}
+#extracurricular(
+  position: "{{ x.position | typst_str }}",
+  details: "{{ x.details | default("") | typst_str }}",
+  company: "{{ x.company | typst_str }}",
+  location: "{{ x.location | typst_str }}",
+  start-date: "{{ x.start | typst_str }}",
+  end-date: "{{ x.end | typst_str }}",
+)
+{% for b in x.bullets -%}
+- {{ b | typst_str }}
+{% endfor %}
+
+{% endfor %}
+
+== Skills
+
+- Programming: {{ skills.programming | join(", ") | typst_str }}
+- Software: {{ skills.software | join(", ") | typst_str }}
+- Certification: {{ skills.certifications | join(", ") | typst_str }}

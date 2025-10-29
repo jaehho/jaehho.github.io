@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ name }} · CV</title>
+  <meta name="description" content="CV of {{ name }} — Electrical Engineering, Bioengineering minor. Research in neuroscience, computer vision in OR, robotics, and data/AI." />
+  <style>
+    :root{
+      --bg:#0b0c0e; --fg:#e9eef2; --muted:#b7c0c8; --card:#121419; --accent:#76e1a6;
+      --rule:#1e232b; --ink:#0e1013; --link:#8ee6ff; --mono: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
+      --sans: system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+    }
+    @media (prefers-color-scheme: light){
+      :root{--bg:#ffffff; --fg:#111418; --muted:#57606a; --card:#f7f9fc; --accent:#0fb478; --rule:#e6ebf1; --ink:#0b0c0e; --link:#006adc;}
+    }
+    html,body{background:var(--bg); color:var(--fg); font-family:var(--sans); line-height:1.5; -webkit-font-smoothing:antialiased; margin:0;}
+    .wrap{max-width:940px; margin:0 auto; padding:32px 20px 72px;}
+    header{display:grid; gap:8px; border-bottom:1px solid var(--rule); padding-bottom:18px; margin-bottom:22px;}
+    h1{font-size:1.9rem; margin:0;}
+    .subtitle{color:var(--muted); font-size:0.98rem}
+    .contact{display:flex; flex-wrap:wrap; gap:10px; margin-top:6px}
+    .contact a, .contact span{color:var(--link); text-decoration:none; font-variant-numeric:tabular-nums;}
+    .chip{display:inline-block; padding:.28rem .6rem; border:1px solid var(--rule); border-radius:999px; font-size:.82rem; color:var(--muted)}
+    section{margin:26px 0}
+    h2{font-size:1.1rem; letter-spacing:.02em; text-transform:uppercase; color:var(--muted); margin:0 0 8px}
+    .item{display:grid; grid-template-columns: 1fr auto; gap:6px 14px; padding:14px; border:1px solid var(--rule); border-radius:14px; background:var(--card); margin:10px 0}
+    .role{font-weight:600}
+    .orgline{color:var(--muted); font-size:.95rem}
+    .dates{white-space:nowrap; font-variant-numeric:tabular-nums; color:var(--muted)}
+    ul{margin:6px 0 0 18px}
+    li{margin:6px 0}
+    .grid-2{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px}
+    .skills ul{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:6px 14px; list-style:none; padding:0; margin:8px 0 0}
+    .skills li{margin:0}
+    .tag{display:inline-block; border:1px solid var(--rule); border-radius:8px; padding:4px 8px; font-size:.92rem}
+    a:hover{text-decoration:underline}
+    .print-note{display:none; color:var(--muted); font-size:.85rem}
+    footer{margin-top:28px; color:var(--muted); font-size:.9rem}
+
+    @media (max-width:720px){
+      .grid-2{grid-template-columns:1fr}
+      .skills ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .item{grid-template-columns:1fr}
+      .dates{order:3}
+    }
+    @media print{
+      :root{--bg:#fff; --fg:#000; --muted:#444; --card:#fff; --rule:#bbb; --link:#000}
+      .wrap{padding:0}
+      header{border:none; padding:0; margin:0 0 12px}
+      .item{break-inside:avoid}
+      a[href^="http"]:after{content:" (" attr(href) ")"; font-size:.85em; color:#333}
+      .print-note{display:block}
+      footer{display:none}
+    }
+  </style>
+
+  <script type="application/ld+json">{{ ldjson | safe }}</script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>{{ name }}</h1>
+      <p class="subtitle">Electrical Engineering · Bioengineering minor · Robotics · ML for healthcare</p>
+      <div class="contact" aria-label="Contact">
+        <span class="chip">{{ location }}</span>
+        <a href="tel:{{ phone | tel_href }}">{{ phone }}</a>
+        <a href="mailto:{{ email }}">{{ email }}</a>
+        <a href="https://www.linkedin.com/in/{{ linkedin }}">LinkedIn</a>
+        <a href="{{ website }}">Website</a>
+      </div>
+      <p class="print-note">Tip: print to PDF for submissions.</p>
+    </header>
+
+    <section aria-labelledby="edu">
+      <h2 id="edu">Education</h2>
+      {% for e in education %}
+      <div class="item">
+        <div>
+          <div class="role">{{ e.institution }}</div>
+          <div class="orgline">{{ e.degree }} · {{ e.location }}</div>
+          <ul>{% for b in e.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+        </div>
+        <div class="dates">{{ e.start }} – {{ e.end }}</div>
+      </div>
+      {% endfor %}
+    </section>
+
+    <section aria-labelledby="work">
+      <h2 id="work">Work Experience</h2>
+      {% for w in experience %}
+      <div class="item">
+        <div>
+          <div class="role">{{ w.role }}</div>
+          <div class="orgline">{{ w.company }} · {{ w.location }}</div>
+          <ul>{% for b in w.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+        </div>
+        <div class="dates">{{ w.start }} – {{ w.end }}</div>
+      </div>
+      {% endfor %}
+    </section>
+
+    <section aria-labelledby="xtr">
+      <h2 id="xtr">Extracurricular Activities</h2>
+      {% for x in extracurricular %}
+      <div class="item">
+        <div>
+          <div class="role">{{ x.role }}</div>
+          <div class="orgline">{{ x.company }} · {{ x.location }}</div>
+          <ul>{% for b in x.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+        </div>
+        <div class="dates">{{ x.start }} – {{ x.end }}</div>
+      </div>
+      {% endfor %}
+    </section>
+
+    <section aria-labelledby="skills" class="skills">
+      <h2 id="skills">Skills</h2>
+      <div class="grid-2">
+        <div class="item">
+          <div>
+            <div class="role">Programming</div>
+            <ul>{% for s in skills.programming %}<li>{{ s }}</li>{% endfor %}</ul>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <div class="role">Software</div>
+            <ul>{% for s in skills.software %}<li>{{ s }}</li>{% endfor %}</ul>
+          </div>
+        </div>
+      </div>
+      <div class="item" style="margin-top:12px">
+        <div>
+          <div class="role">Certifications</div>
+          <div class="orgline">{% for c in skills.certifications %}<span class="tag">{{ c }}</span> {% endfor %}</div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>Updated: {{ updated }}</span>
+    </footer>
+  </div>
+
+  <script>
+    document.addEventListener('keydown', e => {
+      if(e.key.toLowerCase()==='p' && (e.ctrlKey||e.metaKey)) return;
+      if(e.key.toLowerCase()==='p') window.print();
+    });
+  </script>
+</body>
+</html>

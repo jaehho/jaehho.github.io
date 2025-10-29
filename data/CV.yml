@@ -1,0 +1,92 @@
+name: Jaeho Cho
+location: New York, NY
+phone: "+1 (201) 406-5974"
+email: jaeho2025@gmail.com
+linkedin: jaeho-cho
+website: https://jaehho.github.io
+updated: Oct 2025
+
+education:
+  - institution: The Cooper Union for the Advancement of Science and Art
+    location: New York City, NY
+    start: Aug 2022
+    end: May 2026
+    degree: Bachelor of Engineering in Electrical Engineering, Bioengineering Minor
+    bullets:
+      - Half Tuition Scholarship | Myron Coe Scholarship | Full Tuition Scholarship 2025-2026
+      - "Courses: Frequentist Machine Learning, Digital Signal Processing, Communication Theory, Computer Architecture, Integrated Circuit Engineering, Theoretical Neuroscience, Medical Imaging, Bio-Instrumentation & Sensing"
+
+experience:
+  - position: Research Intern
+    details: Neuroscience
+    company: NYU Langone Health
+    location: New York, NY
+    start: June 2025
+    end: Present
+    bullets:
+      - Building a custom robotic bird to study vocal learning and social behavior in budgerigars, using ROS2 for robot control.
+      - Optimizing budgerigar vocalization analysis pipelines to extract acoustic features and cluster syllables.
+      - Developed a ROS2 system for automatic budgie tutoring and data collection, controlling a custom robotic bird optimized for tutoring.
+  - position: Research Volunteer
+    details: Ergonomics in Otolaryngology, Computer Vision in Operating Room
+    company: Mount Sinai
+    location: New York, NY
+    start: Feb 2024
+    end: Present
+    bullets:
+      - Applying deep learning and computer vision to classify surgical instruments and phases in endoscopic sinus surgeries.
+      - Developed data-processing pipelines to interpret raw data from Xsens IMUs, analyzing the ergonomic stress on joints.
+  - position: Data and AI Intern
+    details: Hanwha TotalEnergies Petrochemical
+    company: PwC
+    location: Seoul, South Korea
+    start: May 2024
+    end: Aug 2024
+    bullets:
+      - Developed and optimized advanced time-series forecasting models utilizing GluonTS, Chronos, and Darts Python libraries to generate price predictions for flagship petrochemical products with a 3-month forecasting horizon.
+      - Refactored backend data pipelines in Django, transitioning from MongoDB to ClickHouse and improving performance.
+      - Built a Django service that automates article aggregation via private and public APIs, analytically integrating forecasts and market indicators to enhance LLM-driven sentiment analysis, ultimately delivering actionable insights to analysts.
+  - position: Teacher Assistant
+    details: Design and Drawing
+    company: The Cooper Union
+    location: New York, NY
+    start: Jun 2023
+    end: Aug 2023
+    bullets:
+      - Instructed 24 students in engineering design fundamentals, circuit design, Arduino programming, and Onshape CAD.
+      - Led workshops on Arduinos and circuit design, culminating in students building 3D-printed 4-DoF robotic arms.
+
+extracurricular:
+  - position: Founder/President
+    details: The Pre-Medical & Pre-Dental Society
+    company: The Cooper Union
+    location: New York, NY
+    start: Sep 2024
+    end: Present
+    bullets:
+      - Established a support network for pre-medical and pre-dental students, bridging gaps in guidance at Cooper Union.
+      - Organized and led events, including a blood drive that resulted in 37 whole blood donations, and alumni networking sessions that successfully connected students with current medical school students and healthcare professionals.
+  - position: Project Lead
+    details: Bioengineering Vertically Integrated Projects
+    company: The Cooper Union
+    location: New York, NY
+    start: Sep 2022
+    end: Present
+    bullets:
+      - Building open-source robotic arms for direct human-robot interaction, using Mediapipe and OpenCV Python libraries for pose landmark detection and ROS2 for the kinematic mapping of joint positions to the OpenMANIPULATOR-X system.
+      - Simulated real-time systems in Gazebo using MoveIt2 and ros2_control for collision detection and motion planning.
+      - Designed and fabricated a PCB in Altium for an eTextile sensor, presented at the 2024 ASTM International Exo Games.
+  - position: Shadow
+    details: Dr. Steve Doh (Anesthesiologist)
+    company: St. Joseph's Medical Center
+    location: Yonkers, NY
+    start: Jun 2023
+    end: Jul 2023
+    bullets:
+      - Observed medical procedures, including endoscopies, laparoscopies, lithotripsies, orthopedic, and open surgeries.
+      - Gained insight into medical equipment, from ultrasound and anesthesia machines to robotic-arm assisted surgeries.
+
+skills:
+  programming: [Python, MATLAB, Rust, C, C++, Verilog, VHDL, Git, Docker, JavaScript, SQL]
+  software: [Virtuoso, LTspice, Altium, Vivado, ROS2, Gazebo, Blender, Onshape, Fusion360, Inventor]
+  certifications: [NYS EMT, CPR]

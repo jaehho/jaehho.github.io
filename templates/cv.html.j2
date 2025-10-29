@@ -4,11 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{{ name }} · CV</title>
-  <meta name="description" content="CV of {{ name }}" />
+  <meta name="description" content="CV of {{ name }} — {{ subtitle | default('Electrical Engineering, Bioengineering minor, Robotics, ML for healthcare') }}" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0b0c0e" />
+  <meta property="og:title" content="{{ name }} · CV" />
+  <meta property="og:description" content="{{ subtitle | default('Electrical Engineering, Bioengineering minor, Robotics, ML for healthcare') }}" />
+  <meta property="og:type" content="website" />
+  {% if website %}<link rel="canonical" href="{{ website }}"/>{% endif %}
   <style>
     :root{
       --bg:#0b0c0e; --fg:#e9eef2; --muted:#b7c0c8; --card:#121419; --accent:#76e1a6;
-      --rule:#1e232b; --ink:#0e1013; --link:#8ee6ff; --mono: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
+      --rule:#1e232b; --ink:#0e1013; --link:#8ee6ff;
       --sans: system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
     }
     @media (prefers-color-scheme: light){
@@ -37,6 +43,7 @@
     a:hover{text-decoration:underline}
     .print-note{display:none; color:var(--muted); font-size:.85rem}
     footer{margin-top:28px; color:var(--muted); font-size:.9rem}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
     @media (max-width:720px){
       .grid-2{grid-template-columns:1fr}
@@ -54,89 +61,131 @@
       footer{display:none}
     }
   </style>
-
   <script type="application/ld+json">{{ ldjson | safe }}</script>
 </head>
 <body>
-  <div class="wrap">
-    <header>
+  <a class="sr-only" href="#main">Skip to content</a>
+  <div class="wrap" id="main">
+    <header role="banner">
       <h1>{{ name }}</h1>
-      <p class="subtitle">{{ institution }}</p>
+      <p class="subtitle">{{ subtitle | default('Electrical Engineering · Bioengineering minor · Robotics · ML for healthcare') }}</p>
       <div class="contact" aria-label="Contact">
-        <span class="chip">{{ location }}</span>
-        <a href="tel:{{ phone | tel_href }}">{{ phone }}</a>
-        <a href="mailto:{{ email }}">{{ email }}</a>
-        <a href="https://www.linkedin.com/in/{{ linkedin }}">LinkedIn</a>
-        <a href="{{ website }}">Website</a>
+        {% if location %}<span class="chip">{{ location }}</span>{% endif %}
+        {% if phone %}<a href="tel:{{ phone | tel_href }}">{{ phone }}</a>{% endif %}
+        {% if email %}<a href="mailto:{{ email }}">{{ email }}</a>{% endif %}
+        {% if linkedin %}<a href="https://www.linkedin.com/in/{{ linkedin }}">LinkedIn</a>{% endif %}
+        {% if website %}<a href="{{ website }}">Website</a>{% endif %}
+        {% if pdf_url %}<a href="{{ pdf_url }}" download>Download PDF</a>{% endif %}
       </div>
-      <p class="print-note">Tip: print to PDF for submissions.</p>
+      <p class="print-note">Tip: press “p” to print to PDF.</p>
     </header>
 
+    {% if education %}
     <section aria-labelledby="edu">
       <h2 id="edu">Education</h2>
       {% for e in education %}
       <div class="item">
         <div>
           <div class="role">{{ e.institution }}</div>
-          <div class="orgline">{{ e.degree }} · {{ e.location }}</div>
+          <div class="orgline">
+            {% if e.degree %}{{ e.degree }}{% if e.location %} · {{ e.location }}{% endif %}{% else %}{{ e.location }}{% endif %}
+          </div>
+          {% if e.bullets %}
           <ul>{% for b in e.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+          {% endif %}
         </div>
-        <div class="dates">{{ e.start }} – {{ e.end }}</div>
+        <div class="dates">{% if e.start %}{{ e.start }}{% if e.end %} – {{ e.end }}{% endif %}{% endif %}</div>
       </div>
       {% endfor %}
     </section>
+    {% endif %}
 
+    {% if experience %}
     <section aria-labelledby="work">
       <h2 id="work">Work Experience</h2>
       {% for w in experience %}
       <div class="item">
         <div>
-          <div class="role">{{ w.role }}</div>
-          <div class="orgline">{{ w.company }} · {{ w.location }}</div>
-          <ul>{% for b in w.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+          <div class="role">
+            {{ w.position or w.role }}
+            {% if w.details %} · {{ w.details }}{% endif %}
+          </div>
+          <div class="orgline">{{ w.company }}{% if w.location %} · {{ w.location }}{% endif %}</div>
+          {% if w.bullets %}<ul>{% for b in w.bullets %}<li>{{ b }}</li>{% endfor %}</ul>{% endif %}
         </div>
-        <div class="dates">{{ w.start }} – {{ w.end }}</div>
+        <div class="dates">{% if w.start %}{{ w.start }}{% if w.end %} – {{ w.end }}{% endif %}{% endif %}</div>
       </div>
       {% endfor %}
     </section>
+    {% endif %}
 
+    {% if extracurricular %}
     <section aria-labelledby="xtr">
       <h2 id="xtr">Extracurricular Activities</h2>
       {% for x in extracurricular %}
       <div class="item">
         <div>
-          <div class="role">{{ x.role }}</div>
-          <div class="orgline">{{ x.company }} · {{ x.location }}</div>
-          <ul>{% for b in x.bullets %}<li>{{ b }}</li>{% endfor %}</ul>
+          <div class="role">
+            {{ x.position }}
+            {% if x.details %} · {{ x.details }}{% endif %}
+          </div>
+          <div class="orgline">{{ x.company }}{% if x.location %} · {{ x.location }}{% endif %}</div>
+          {% if x.bullets %}<ul>{% for b in x.bullets %}<li>{{ b }}</li>{% endfor %}</ul>{% endif %}
         </div>
-        <div class="dates">{{ x.start }} – {{ x.end }}</div>
+        <div class="dates">{% if x.start %}{{ x.start }}{% if x.end %} – {{ x.end }}{% endif %}{% endif %}</div>
       </div>
       {% endfor %}
     </section>
+    {% endif %}
 
+    {% if projects %}
+    <section aria-labelledby="proj">
+      <h2 id="proj">Projects</h2>
+      {% for p in projects %}
+      <div class="item">
+        <div>
+          <div class="role">{{ p.name }}</div>
+          {% if p.description %}<ul><li>{{ p.description }}</li></ul>{% endif %}
+        </div>
+        <div class="dates">{% if p.start %}{{ p.start }}{% if p.end %} – {{ p.end }}{% endif %}{% endif %}</div>
+      </div>
+      {% endfor %}
+    </section>
+    {% endif %}
+
+    {% if skills %}
     <section aria-labelledby="skills" class="skills">
       <h2 id="skills">Skills</h2>
       <div class="grid-2">
+        {% if skills.programming %}
         <div class="item">
           <div>
             <div class="role">Programming</div>
             <ul>{% for s in skills.programming %}<li>{{ s }}</li>{% endfor %}</ul>
           </div>
         </div>
+        {% endif %}
+        {% if skills.software %}
         <div class="item">
           <div>
             <div class="role">Software</div>
             <ul>{% for s in skills.software %}<li>{{ s }}</li>{% endfor %}</ul>
           </div>
         </div>
+        {% endif %}
       </div>
+      {% if skills.certifications %}
       <div class="item" style="margin-top:12px">
         <div>
           <div class="role">Certifications</div>
-          <div class="orgline">{% for c in skills.certifications %}<span class="tag">{{ c }}</span> {% endfor %}</div>
+          <div class="orgline">
+            {% for c in skills.certifications %}<span class="tag">{{ c }}</span> {% endfor %}
+          </div>
         </div>
       </div>
+      {% endif %}
     </section>
+    {% endif %}
 
     <footer>
       <span>Updated: {{ updated }}</span>
@@ -144,9 +193,9 @@
   </div>
 
   <script>
+    // Press "p" to print. Works without blocking Cmd/Ctrl+P.
     document.addEventListener('keydown', e => {
-      if(e.key.toLowerCase()==='p' && (e.ctrlKey||e.metaKey)) return;
-      if(e.key.toLowerCase()==='p') window.print();
+      if(e.key.toLowerCase()==='p' && !(e.ctrlKey||e.metaKey)) { window.print(); }
     });
   </script>
 </body>

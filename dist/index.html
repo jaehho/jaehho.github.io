@@ -4,11 +4,17 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Jaeho Cho · CV</title>
-  <meta name="description" content="CV of Jaeho Cho" />
+  <meta name="description" content="CV of Jaeho Cho — Electrical Engineering, Bioengineering minor, Robotics, ML for healthcare" />
+  <meta name="robots" content="index,follow" />
+  <meta name="theme-color" content="#0b0c0e" />
+  <meta property="og:title" content="Jaeho Cho · CV" />
+  <meta property="og:description" content="Electrical Engineering, Bioengineering minor, Robotics, ML for healthcare" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://jaehho.github.io"/>
   <style>
     :root{
       --bg:#0b0c0e; --fg:#e9eef2; --muted:#b7c0c8; --card:#121419; --accent:#76e1a6;
-      --rule:#1e232b; --ink:#0e1013; --link:#8ee6ff; --mono: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
+      --rule:#1e232b; --ink:#0e1013; --link:#8ee6ff;
       --sans: system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
     }
     @media (prefers-color-scheme: light){
@@ -37,6 +43,7 @@
     a:hover{text-decoration:underline}
     .print-note{display:none; color:var(--muted); font-size:.85rem}
     footer{margin-top:28px; color:var(--muted); font-size:.9rem}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
     @media (max-width:720px){
       .grid-2{grid-template-columns:1fr}
@@ -54,44 +61,55 @@
       footer{display:none}
     }
   </style>
-
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Jaeho Cho", "email": "mailto:jaeho2025@gmail.com", "telephone": "+12014065974", "url": "https://jaehho.github.io", "address": {"@type": "PostalAddress", "addressLocality": "New York", "addressRegion": "NY", "addressCountry": "US"}, "sameAs": ["https://www.linkedin.com/in/jaeho-cho"]}</script>
 </head>
 <body>
-  <div class="wrap">
-    <header>
+  <a class="sr-only" href="#main">Skip to content</a>
+  <div class="wrap" id="main">
+    <header role="banner">
       <h1>Jaeho Cho</h1>
-      <p class="subtitle"></p>
+      <p class="subtitle">Electrical Engineering · Bioengineering minor · Robotics · ML for healthcare</p>
       <div class="contact" aria-label="Contact">
         <span class="chip">New York, NY</span>
         <a href="tel:+12014065974">+1 (201) 406-5974</a>
         <a href="mailto:jaeho2025@gmail.com">jaeho2025@gmail.com</a>
         <a href="https://www.linkedin.com/in/jaeho-cho">LinkedIn</a>
         <a href="https://jaehho.github.io">Website</a>
+        
       </div>
-      <p class="print-note">Tip: print to PDF for submissions.</p>
+      <p class="print-note">Tip: press “p” to print to PDF.</p>
     </header>
 
+    
     <section aria-labelledby="edu">
       <h2 id="edu">Education</h2>
       
       <div class="item">
         <div>
           <div class="role">The Cooper Union for the Advancement of Science and Art</div>
-          <div class="orgline">Bachelor of Engineering in Electrical Engineering, Bioengineering Minor · New York City, NY</div>
+          <div class="orgline">
+            Bachelor of Engineering in Electrical Engineering, Bioengineering Minor · New York City, NY
+          </div>
+          
           <ul><li>Half Tuition Scholarship | Myron Coe Scholarship | Full Tuition Scholarship 2025-2026</li><li>Courses: Frequentist Machine Learning, Digital Signal Processing, Communication Theory, Computer Architecture, Integrated Circuit Engineering, Theoretical Neuroscience, Medical Imaging, Bio-Instrumentation &amp; Sensing</li></ul>
+          
         </div>
         <div class="dates">Aug 2022 – May 2026</div>
       </div>
       
     </section>
+    
 
+    
     <section aria-labelledby="work">
       <h2 id="work">Work Experience</h2>
       
       <div class="item">
         <div>
-          <div class="role"></div>
+          <div class="role">
+            Research Intern
+             · Neuroscience
+          </div>
           <div class="orgline">NYU Langone Health · New York, NY</div>
           <ul><li>Building a custom robotic bird to study vocal learning and social behavior in budgerigars, using ROS2 for robot control.</li><li>Optimizing budgerigar vocalization analysis pipelines to extract acoustic features and cluster syllables.</li><li>Developed a ROS2 system for automatic budgie tutoring and data collection, controlling a custom robotic bird optimized for tutoring.</li></ul>
         </div>
@@ -100,7 +118,10 @@
       
       <div class="item">
         <div>
-          <div class="role"></div>
+          <div class="role">
+            Research Volunteer
+             · Ergonomics in Otolaryngology, Computer Vision in Operating Room
+          </div>
           <div class="orgline">Mount Sinai · New York, NY</div>
           <ul><li>Applying deep learning and computer vision to classify surgical instruments and phases in endoscopic sinus surgeries.</li><li>Developed data-processing pipelines to interpret raw data from Xsens IMUs, analyzing the ergonomic stress on joints.</li></ul>
         </div>
@@ -109,7 +130,10 @@
       
       <div class="item">
         <div>
-          <div class="role"></div>
+          <div class="role">
+            Data and AI Intern
+             · Hanwha TotalEnergies Petrochemical
+          </div>
           <div class="orgline">PwC · Seoul, South Korea</div>
           <ul><li>Developed and optimized advanced time-series forecasting models utilizing GluonTS, Chronos, and Darts Python libraries to generate price predictions for flagship petrochemical products with a 3-month forecasting horizon.</li><li>Refactored backend data pipelines in Django, transitioning from MongoDB to ClickHouse and improving performance.</li><li>Built a Django service that automates article aggregation via private and public APIs, analytically integrating forecasts and market indicators to enhance LLM-driven sentiment analysis, ultimately delivering actionable insights to analysts.</li></ul>
         </div>
@@ -118,7 +142,10 @@
       
       <div class="item">
         <div>
-          <div class="role"></div>
+          <div class="role">
+            Teacher Assistant
+             · Design and Drawing
+          </div>
           <div class="orgline">The Cooper Union · New York, NY</div>
           <ul><li>Instructed 24 students in engineering design fundamentals, circuit design, Arduino programming, and Onshape CAD.</li><li>Led workshops on Arduinos and circuit design, culminating in students building 3D-printed 4-DoF robotic arms.</li></ul>
         </div>
@@ -126,22 +153,18 @@
       </div>
       
     </section>
+    
 
+    
     <section aria-labelledby="xtr">
       <h2 id="xtr">Extracurricular Activities</h2>
       
       <div class="item">
         <div>
-          <div class="role"></div>
-          <div class="orgline">The Cooper Union · New York, NY</div>
-          <ul><li>Established a support network for pre-medical and pre-dental students, bridging gaps in guidance at Cooper Union.</li><li>Organized and led events, including a blood drive that resulted in 37 whole blood donations, and alumni networking sessions that successfully connected students with current medical school students and healthcare professionals.</li></ul>
-        </div>
-        <div class="dates">Sep 2024 – Present</div>
-      </div>
-      
-      <div class="item">
-        <div>
-          <div class="role"></div>
+          <div class="role">
+            Project Lead
+             · Bioengineering Vertically Integrated Projects
+          </div>
           <div class="orgline">The Cooper Union · New York, NY</div>
           <ul><li>Building open-source robotic arms for direct human-robot interaction, using Mediapipe and OpenCV Python libraries for pose landmark detection and ROS2 for the kinematic mapping of joint positions to the OpenMANIPULATOR-X system.</li><li>Simulated real-time systems in Gazebo using MoveIt2 and ros2_control for collision detection and motion planning.</li><li>Designed and fabricated a PCB in Altium for an eTextile sensor, presented at the 2024 ASTM International Exo Games.</li></ul>
         </div>
@@ -150,7 +173,10 @@
       
       <div class="item">
         <div>
-          <div class="role"></div>
+          <div class="role">
+            Shadow
+             · Dr. Steve Doh (Anesthesiologist)
+          </div>
           <div class="orgline">St. Joseph&#39;s Medical Center · Yonkers, NY</div>
           <ul><li>Observed medical procedures, including endoscopies, laparoscopies, lithotripsies, orthopedic, and open surgeries.</li><li>Gained insight into medical equipment, from ultrasound and anesthesia machines to robotic-arm assisted surgeries.</li></ul>
         </div>
@@ -158,30 +184,43 @@
       </div>
       
     </section>
+    
 
+    
+
+    
     <section aria-labelledby="skills" class="skills">
       <h2 id="skills">Skills</h2>
       <div class="grid-2">
+        
         <div class="item">
           <div>
             <div class="role">Programming</div>
             <ul><li>Python</li><li>MATLAB</li><li>Rust</li><li>C</li><li>C++</li><li>Verilog</li><li>VHDL</li><li>Git</li><li>Docker</li><li>JavaScript</li><li>SQL</li></ul>
           </div>
         </div>
+        
+        
         <div class="item">
           <div>
             <div class="role">Software</div>
             <ul><li>Virtuoso</li><li>LTspice</li><li>Altium</li><li>Vivado</li><li>ROS2</li><li>Gazebo</li><li>Blender</li><li>Onshape</li><li>Fusion360</li><li>Inventor</li></ul>
           </div>
         </div>
+        
       </div>
+      
       <div class="item" style="margin-top:12px">
         <div>
           <div class="role">Certifications</div>
-          <div class="orgline"><span class="tag">NYS EMT</span> <span class="tag">CPR</span> </div>
+          <div class="orgline">
+            <span class="tag">NYS EMT</span> <span class="tag">CPR</span> 
+          </div>
         </div>
       </div>
+      
     </section>
+    
 
     <footer>
       <span>Updated: Oct 2025</span>
@@ -189,9 +228,9 @@
   </div>
 
   <script>
+    // Press "p" to print. Works without blocking Cmd/Ctrl+P.
     document.addEventListener('keydown', e => {
-      if(e.key.toLowerCase()==='p' && (e.ctrlKey||e.metaKey)) return;
-      if(e.key.toLowerCase()==='p') window.print();
+      if(e.key.toLowerCase()==='p' && !(e.ctrlKey||e.metaKey)) { window.print(); }
     });
   </script>
 </body>

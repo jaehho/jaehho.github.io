@@ -101,19 +101,6 @@
 
 
 #extracurricular(
-  position: "Founder/President",
-  details: "The Pre-Medical &amp; Pre-Dental Society",
-  company: "The Cooper Union",
-  location: "New York, NY",
-  start-date: "Sep 2024",
-  end-date: "Present",
-)
-- Established a support network for pre-medical and pre-dental students, bridging gaps in guidance at Cooper Union.
-- Organized and led events, including a blood drive that resulted in 37 whole blood donations, and alumni networking sessions that successfully connected students with current medical school students and healthcare professionals.
-
-
-
-#extracurricular(
   position: "Project Lead",
   details: "Bioengineering Vertically Integrated Projects",
   company: "The Cooper Union",

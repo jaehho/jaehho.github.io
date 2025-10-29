@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>{{ name }} · CV</title>
-  <meta name="description" content="CV of {{ name }} — Electrical Engineering, Bioengineering minor. Research in neuroscience, computer vision in OR, robotics, and data/AI." />
+  <meta name="description" content="CV of {{ name }}" />
   <style>
     :root{
       --bg:#0b0c0e; --fg:#e9eef2; --muted:#b7c0c8; --card:#121419; --accent:#76e1a6;
@@ -61,7 +61,7 @@
   <div class="wrap">
     <header>
       <h1>{{ name }}</h1>
-      <p class="subtitle">Electrical Engineering · Bioengineering minor · Robotics · ML for healthcare</p>
+      <p class="subtitle">{{ institution }}</p>
       <div class="contact" aria-label="Contact">
         <span class="chip">{{ location }}</span>
         <a href="tel:{{ phone | tel_href }}">{{ phone }}</a>

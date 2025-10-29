@@ -12,6 +12,7 @@
     "linkedin": { "type": "string" },
     "website": { "type": "string", "format": "uri" },
     "updated": { "type": "string" },
+    "subtitle": { "type": "string" },
 
     "education": {
       "type": "array",

@@ -26,4 +26,4 @@ jobs:
 
       - name: Sync CV to OneDrive
         run: |
-          rclone copy dist/Jaeho_Cho_CV.pdf "Cooper Union OneDrive:" --progress
+          rclone copy dist/Jaeho_Cho_CV.pdf "Cooper Union OneDrive" --progress

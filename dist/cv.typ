@@ -1,4 +1,4 @@
-#import "@local/cv:0.1.0": conf, header, edu, work, extracurricular
+#import "lib.typ": conf, header, edu, work, extracurricular, project
 
 #let name = "Jaeho Cho"
 
@@ -7,10 +7,10 @@
   paper: "us-letter",
   accent-color: "#000000",
   font-size: 10pt,
-  paragraph-leading: 0.59em,
-  paragraph-spacing: 0.7em,
-  section-heading-margin-top: 0.5em,
-  section-heading-margin-bottom: 0.2em,
+  paragraph-leading: 0.6em,
+  paragraph-spacing: 1em,
+  section-heading-margin-top: 0.6em,
+  section-heading-margin-bottom: 0.3em,
   border-margin: 0.3in,
 )
 
@@ -117,7 +117,7 @@
 #extracurricular(
   position: "Shadow",
   details: "Dr. Steve Doh (Anesthesiologist)",
-  company: "St. Joseph&#39;s Medical Center",
+  company: "St. Joseph's Medical Center",
   location: "Yonkers, NY",
   start-date: "Jun 2023",
   end-date: "Jul 2023",
@@ -125,8 +125,14 @@
 - Observed medical procedures, including endoscopies, laparoscopies, lithotripsies, orthopedic, and open surgeries.
 - Gained insight into medical equipment, from ultrasound and anesthesia machines to robotic-arm assisted surgeries.
 
+== Projects
 
-
+#project(
+  name: "Theoretical Neuroscience Modeling",
+  start-date: "Jan 2025",
+  end-date: "May 2025",
+)
+- Developed computational models, from neural encoding and decoding to the Hodgkin-Huxley model and cable theory.
 
 == Skills
 

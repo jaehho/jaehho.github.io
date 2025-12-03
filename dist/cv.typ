@@ -29,84 +29,89 @@
 #edu(
   institution: "The Cooper Union for the Advancement of Science and Art",
   location: "New York City, NY",
-  start-date: "Aug 2024",
-  end-date: "May 2026*",
-  degree: "Master of Engineering in Electrical Engineering",
-)
-
-#edu(
-  institution: "The Cooper Union for the Advancement of Science and Art",
-  location: "New York City, NY",
   start-date: "Aug 2022",
   end-date: "May 2026*",
-  degree: "Bachelor of Engineering in Electrical Engineering, Bioengineering Minor",
+  degree: "M.Eng, B.Eng in Electrical Engineering (Joint), Bioengineering Minor",
 )
 - Half Tuition Scholarship | Myron Coe Scholarship | Full Tuition Scholarship 2025-2026
-- Courses: Frequentist Machine Learning, Digital Signal Processing, Communication Theory, Computer Architecture, Integrated Circuit Engineering, Theoretical Neuroscience, Medical Imaging, Bio-Instrumentation & Sensing
+- Courses: Digital Signal Processing, Communication Theory, Engineering Electromagnetics, Digital VLSI System Design, Integrated Circuit Engineering, Theoretical Neuroscience, Microfabrication & Biomedical Device Design
 
 
-== Research/Work Experience
+== Research Experience
 
 #work(
   position: "Master's Thesis",
-  details: "Dr. Koo",
+  details: "Dr. Jabeom Koo",
   company: "The Cooper Union",
   location: "New York, NY",
   start-date: "Jun 2025",
   end-date: "Present",
 )
-- Investigating the application of neuromorphic computing to design an ultra-low-power neural signal processor.
-- Designed and simulated a low-power chopper low noise amplifier (LNA) in Cadence Virtuoso using 65nm CMOS technology. 
+- Conducting research on neuromorphic architectures for ultra-low-power brain–machine interfaces, with current efforts focused on designing a neuromorphic processing block (low-power ADC) to follow the LNA.
+- Designed a chopper-stabilized low-noise amplifier in 65-nm CMOS using Cadence Virtuoso, achieving 41 dB gain over 0.6 Hz–5 kHz with a 1 V supply and a noise-efficiency factor (NEF) of 1.7.
 
 #work(
   position: "Undergraduate Researcher",
-  details: "Dr. Long (Long Lab)",
+  details: "Dr. Michael Long",
   company: "NYU Langone Health",
   location: "New York, NY",
   start-date: "Jun 2025",
   end-date: "Present",
 )
-- Analyzing budgerigar recordings to extract acoustic features and cluster syllables using methods like UMAP and HDBSCAN along with supervised and unsupervised deep learning models for segmenting and classifying bird vocalizations.
-- Automated budgie tutoring and data collection using ROS2 and a custom robot budgie, reducing manual observation time and increasing data throughput.
+- Developed signal-processing and machine-learning pipelines for vocalization analysis, including acoustic feature extraction, unsupervised clustering, dimensionality-reduction techniques, and deep neural models for syllable segmentation and classification.
+- Engineered a ROS2-based automated tutoring and data-collection robot enabling long-duration, minimally supervised behavioral experiments.
 
 #work(
   position: "Independent Researcher",
-  details: "Dr. Mintchev",
+  details: "Dr. Stanislav Mintchev",
   company: "The Cooper Union",
   location: "New York, NY",
   start-date: "Jan 2025",
   end-date: "Present",
 )
-- Working on the theoretical analysis of a weight- and reward-dependent spike-timing-dependent plasticity (W-R-STDP) rule, with an emphasis on deriving the governing equations and establishing rigorous stability and convergence conditions.
-- Developed low level computational models, from neural encoding and decoding to multi-compartment models with synaptic inputs.
+- Working on the theoretical analysis of a weight- and reward-dependent spike-timing-dependent plasticity rule, with an emphasis on deriving the governing equations and establishing rigorous stability and convergence conditions.
+- Modeled and analyzed frameworks in Dayan and Abbott’s Theoretical Neuroscience textbook in Python like multi-compartment models with multiple synaptic inputs or Hopfield networks with Hebbian learning.
 
 #work(
   position: "Undergraduate Researcher",
-  details: "Otolaryngology",
+  details: "Dr. Jonathan Dropkin, Dr. Alfred Marc Iloreta",
   company: "Mount Sinai",
   location: "New York, NY",
   start-date: "Feb 2024",
   end-date: "Present",
 )
-- Evaluated the Gemini API for multi-modal surgical workflow analysis, using synced endoscopic and external operating room videos to detect and label surgical instruments and phases.
-- Developed and validated a deep learning system using Ultralytics YOLO to recognize and label surgical instruments in endoscopic sinus and skull base procedures. Achieved overall precision of 96.4%, recall of 94.8%, and mAP50 of 96.6%.
-- Designing and building an active assistive device to improve surgeon ergonomics during long procedures, evaluating performance with EMG fatigue analysis. 
-- Evaluating the ergonomics of ENT surgeons using the Opal V2R system (IMU sensors) and FREEEMG (EMG sensors) to measure muscle fatigue during office and OR procedures.
+- Developed and evaluated multi-modal surgical workflow analysis pipelines using the Gemini API, synchronizing endoscopic and external OR video streams for surgical instrument and phase detection.
+- Trained and optimized a deep learning model (Ultralytics YOLO) for real-time surgical instrument recognition in endoscopic sinus and skull-base procedures, achieving 96.4% precision, 94.8% recall, and 96.6% mAP50.
+- Designing an active assistive device to improve surgeon ergonomics during extended procedures, assessing effectiveness through EMG-based fatigue analysis.
+- Conducting quantitative ergonomics studies of ENT surgeons using IMU (Opal V2R) and EMG (FREEEMG) sensor arrays; developing signal-processing pipelines for posture and mechanical-exposure analysis.
 
 #work(
   position: "Project Lead",
-  details: "Dr. Shah's lab (miliLab)",
+  details: "Dr. Mili Shah",
   company: "The Cooper Union",
   location: "New York, NY",
   start-date: "Sep 2023",
   end-date: "Present",
 )
-- MARVIN: Led development of an open-source robotic arm system for human-robot interaction, integrating ROS2, MoveIt2 for motion planning, and Mediapipe for real-time pose landmark detection.
-- Designed a kinematic mapping system from human anatomical landmarks to the joint angles of the OpenMANIPULATOR-X robotic arm.
-- ROSS: Building a small-scale spherical robot, designed in Fusion360 and controlled with an ESP32-CAM microcontroller.
-- Designed and fabricated a PCB in Altium for an eTextile sensor, presented at the 2024 ASTM International Exo Games.
-- Evaluation of passive exoskeleton using EMG fatigue assessment involving nonparametric analysis in Python.
-- Mentored and trained 4 students in advanced topics Fusion360, ROS2, circuit design, soldering, and PCB design.
+- Mentoring and training four students in ROS 2, PCB design, circuit prototyping, soldering, and CAD (Fusion 360).
+- Led development of a dual-arm robot; implemented motion-planning pipelines and web-based teleoperation using the ROS 2 framework. 
+- Building a small spherical robot for decentralized swarm self-assembly; designed and prototyped the mechanical structure and implemented communication and distributed-control routines.
+- Designed and fabricated a custom PCB for an e-textile sensor, presented at the 2024 ASTM International Exo Games.
+
+
+== Publications
+// #bibliography("bib.bib", title: none, full: true, style: "ieee_cv.csl")
+
+[1] J. Cho, C. Stonebraker et al., “Effect of a pilot, office-based ergonomic rhinology intervention on mechanical exposure, musculoskeletal symptoms, and usability.” *In progress*
+
+[2] C. Stonebraker, J. Cho et al., “Multi-modal Surgical Workflow Analysis with Gemini API,” *Submitted* to the _2026 American Rhinologic Society (ARS) at Combined Otolaryngology Spring Meetings (COSM)_ to be published in the _International Forum of Allergy & Rhinology_, 2026.
+
+[3] J. Cho and S. Klymchuk, “MARVIN: Web-Based Teleoperation of a Dual-Arm Robot,” *Submitted* to the _TEI 2026 Student Design Competition_, 2026.
+
+[4] C. Stonebraker, J. Cho et al., “Development of a Computer Vision System for Surgical Instrument Analysis During Endoscopic Sinus and Skull Base Surgery,” *Accepted* to the _2026 North American Skull Base Society (NASBS) Annual Meeting_ to be published in the _Journal of Neurological Surgery Part B: Skull Base_, 2026.
+
+
+== Work Experience
 
 #work(
   position: "Data and AI Intern",
@@ -119,15 +124,6 @@
 - Developed and optimized advanced time-series forecasting models utilizing GluonTS, Chronos, and Darts Python libraries to generate price predictions for flagship petrochemical products with a 3-month forecasting horizon.
 - Refactored backend data pipelines in Django, transitioning from MongoDB to ClickHouse and improving performance.
 - Built a Django service that automates article aggregation via private and public APIs to enhance LLM-driven sentiment analysis.
-
-== Publications
-// #bibliography("bib.bib", title: none, full: true, style: "ieee_cv.csl")
-
-[1] C. Stonebraker, J. Cho et al., “Multi-modal Surgical Workflow Analysis with Gemini API,” *Submitted* to the _2026 American Rhinologic Society (ARS) at Combined Otolaryngology Spring Meetings (COSM)_ to be published in the _International Forum of Allergy & Rhinology_, 2026.
-
-[2] J. Cho and S. Klymchuk, “MARVIN: Web-Based Teleoperation of a Dual-Arm Robot,” *Submitted* to the _TEI 2026 Student Design Competition_, 2026.
-
-[3] C. Stonebraker, J. Cho et al., “Development of a Computer Vision System for Surgical Instrument Analysis During Endoscopic Sinus and Skull Base Surgery,” *Submitted* to the _2026 North American Skull Base Society (NASBS) Annual Meeting_ to be published in the _Journal of Neurological Surgery Part B: Skull Base_, 2026.
 
 
 == Skills

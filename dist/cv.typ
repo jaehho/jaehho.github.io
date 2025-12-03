@@ -63,14 +63,14 @@
 
 #work(
   position: "Independent Researcher",
-  details: "Dr. Stanislav Mintchev",
+  details: "Dr. Stanislav Mintchev, Dr. Brian Frost Laplante",
   company: "The Cooper Union",
   location: "New York, NY",
   start-date: "Jan 2025",
   end-date: "Present",
 )
-- Working on the theoretical analysis of a weight- and reward-dependent spike-timing-dependent plasticity rule, with an emphasis on deriving the governing equations and establishing rigorous stability and convergence conditions.
-- Modeled and analyzed frameworks in Dayan and Abbott’s Theoretical Neuroscience textbook in Python like multi-compartment models with multiple synaptic inputs or Hopfield networks with Hebbian learning.
+- Developing reduced-order models of spiking neural networks using delay differential equations and mean-field methods to study recurrent activity and stability.
+- Implementing computational models from Dayan and Abbott’s _Theoretical Neuroscience_ to study multi-compartment dynamics, network attractors, and plasticity rules in Python.
 
 #work(
   position: "Undergraduate Researcher",
@@ -80,9 +80,9 @@
   start-date: "Feb 2024",
   end-date: "Present",
 )
-- Developed and evaluated multi-modal surgical workflow analysis pipelines using the Gemini API, synchronizing endoscopic and external OR video streams for surgical instrument and phase detection.
+- Built and evaluated multi-modal surgical workflow analysis pipelines using the Gemini API, synchronizing endoscopic and external OR video streams for surgical instrument and phase detection.
 - Trained and optimized a deep learning model (Ultralytics YOLO) for real-time surgical instrument recognition in endoscopic sinus and skull-base procedures, achieving 96.4% precision, 94.8% recall, and 96.6% mAP50.
-- Designing an active assistive device to improve surgeon ergonomics during extended procedures, assessing effectiveness through EMG-based fatigue analysis.
+- Designing an assistive device to improve surgeon ergonomics during extended procedures, assessing effectiveness through EMG-based fatigue analysis.
 - Conducting quantitative ergonomics studies of ENT surgeons using IMU (Opal V2R) and EMG (FREEEMG) sensor arrays; developing signal-processing pipelines for posture and mechanical-exposure analysis.
 
 #work(
@@ -93,7 +93,7 @@
   start-date: "Sep 2023",
   end-date: "Present",
 )
-- Mentoring and training four students in ROS 2, PCB design, circuit prototyping, soldering, and CAD (Fusion 360).
+- Mentoring and training four students in ROS2, PCB design, circuit prototyping, and mechanical CAD workflows.
 - Led development of a dual-arm robot; implemented motion-planning pipelines and web-based teleoperation using the ROS 2 framework. 
 - Building a small spherical robot for decentralized swarm self-assembly; designed and prototyped the mechanical structure and implemented communication and distributed-control routines.
 - Designed and fabricated a custom PCB for an e-textile sensor, presented at the 2024 ASTM International Exo Games.
@@ -121,9 +121,9 @@
   start-date: "May 2024",
   end-date: "Aug 2024",
 )
-- Developed and optimized advanced time-series forecasting models utilizing GluonTS, Chronos, and Darts Python libraries to generate price predictions for flagship petrochemical products with a 3-month forecasting horizon.
-- Refactored backend data pipelines in Django, transitioning from MongoDB to ClickHouse and improving performance.
-- Built a Django service that automates article aggregation via private and public APIs to enhance LLM-driven sentiment analysis.
+- Developed time-series forecasting models using GluonTS, Chronos, and Darts to generate three-month market predictions for petrochemical products.
+- Refactored Django backend pipelines during a transition from MongoDB to ClickHouse, improving data throughput and service latency.
+- Implemented a Django-based article aggregation service integrating private and public APIs to support LLM-driven sentiment analysis.
 
 
 == Skills

@@ -48,7 +48,7 @@
   end-date: "Present",
 )
 - Conducting research on neuromorphic architectures for ultra-low-power brain–machine interfaces, with current efforts focused on designing a neuromorphic processing block (low-power ADC) to follow the LNA.
-- Designed a chopper-stabilized low-noise amplifier in 65-nm CMOS using Cadence Virtuoso, achieving 41 dB gain over 0.6 Hz–5 kHz with a 1 V supply and a noise-efficiency factor (NEF) of 1.7.
+- Designed a chopper-stabilized low-noise amplifier in 65-nm CMOS using Cadence Virtuoso, achieving 41 dB gain over 0.6 Hz–5 kHz, 1.6 μW power consumption, and a noise-efficiency factor (NEF) of 1.7.
 
 #work(
   position: "Undergraduate Researcher",

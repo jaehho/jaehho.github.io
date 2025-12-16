@@ -11,12 +11,13 @@
   paragraph-spacing: 1.2em,
   section-heading-margin-top: 1em,
   section-heading-margin-bottom: 0pt,
+  page-margin: 0.5in,
   border-margin: 0.3in,
   doc,
 ) = {
 
   // Sets document metadata
-  set document(author: author, title: author.replace(" ", "_") + "_Resume")
+  set document(author: author, title: author.replace(" ", "_") + "_CV")
 
   // Document-wide formatting
   set text(
@@ -28,11 +29,12 @@
 
   // Page formatting
   set page(
-    margin: (0.5in),
+    margin: page-margin,
     paper: paper,
-    background: context {
-      place(dx: border-margin, dy: border-margin, rect(width: page.width - border-margin*2, height: page.height - border-margin*2, stroke: 0.5pt))
-    }
+    // Border
+    // background: context {
+    //   place(dx: border-margin, dy: border-margin, rect(width: page.width - border-margin*2, height: page.height - border-margin*2, stroke: 0.5pt))
+    // }
   )
 
   // Paragraph formatting

@@ -45,6 +45,7 @@
 // Header binding
 #let header(
   name: "",
+  subtitle: "",
   location: "",
   phone: "",
   email: "",
@@ -62,6 +63,16 @@
     ]
     = #name
 
+    #if subtitle != "" {
+    [
+      #set align(center)
+      #set text(
+        // weight: 700,
+        size: 16pt,
+      )
+      #subtitle]
+    }
+    
     #pad(
       top: 0.25em,
       align(center)[

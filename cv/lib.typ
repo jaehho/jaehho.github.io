@@ -13,6 +13,7 @@
   section-heading-margin-bottom: 0pt,
   page-margin: 0.5in,
   border-margin: 0.3in,
+  show-border: false,
   doc,
 ) = {
 
@@ -32,9 +33,11 @@
     margin: page-margin,
     paper: paper,
     // Border
-    // background: context {
-    //   place(dx: border-margin, dy: border-margin, rect(width: page.width - border-margin*2, height: page.height - border-margin*2, stroke: 0.5pt))
-    // }
+    background: if show-border {
+      context {
+        place(dx: border-margin, dy: border-margin, rect(width: page.width - border-margin*2, height: page.height - border-margin*2, stroke: 0.5pt))
+      }
+    }
   )
 
   // Paragraph formatting

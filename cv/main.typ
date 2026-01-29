@@ -14,6 +14,7 @@
   section-heading-margin-bottom: 0.3em,
   page-margin: 1in,
   border-margin: 0.3in,
+  show-border: false,
 )
 
 #header(
@@ -107,11 +108,7 @@
 
 // [1] J. Cho, C. Stonebraker et al., “Effect of a pilot, office-based ergonomic rhinology intervention on mechanical exposure, musculoskeletal symptoms, and usability.” *In progress*
 
-[1] C. Stonebraker, J. Cho et al., “Multi-modal Surgical Workflow Analysis with Gemini Image Understanding,” *Submitted* to the _2026 American Rhinologic Society (ARS) at Combined Otolaryngology Spring Meetings (COSM)_.
-
-[2] J. Cho and S. Klymchuk, “MARVIN: Web-Based Teleoperation of a Dual-Arm Robot,” *Submitted* to the _TEI 2026 Student Design Competition_, 2026.
-
-[3] C. Stonebraker, J. Cho et al., “Development of a Computer Vision System for Surgical Instrument Analysis During Endoscopic Sinus and Skull Base Surgery,” *Accepted* to the _2026 North American Skull Base Society (NASBS) Annual Meeting_ to be published in the _Journal of Neurological Surgery Part B: Skull Base_, 2026.
+[1] C. Stonebraker, J. Cho et al., “Development of a Computer Vision System for Surgical Instrument Analysis During Endoscopic Sinus and Skull Base Surgery,” *Accepted* to the _2026 North American Skull Base Society (NASBS) Annual Meeting_ to be published in the _Journal of Neurological Surgery Part B: Skull Base_, 2026.
 
 
 == Work Experience

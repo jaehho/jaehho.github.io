@@ -2,6 +2,7 @@
 
 #let name = "Jaeho Cho"
 
+// Document Configuration
 #show: conf.with(
   author: name,
   paper: "us-letter",
@@ -10,16 +11,17 @@
   font-size: 9.4pt,
   paragraph-leading: 0.6em,
   paragraph-spacing: 1em,
-  section-heading-margin-top: 0.6em,
-  section-heading-margin-bottom: 0.3em,
+  section-heading-margin-top: 0.8em,
+  section-heading-margin-bottom: 0.4em,
   page-margin: 1in,
   border-margin: 0.3in,
   show-border: false,
 )
 
+// Header with Contact Information
 #header(
   name: name,
-  subtitle: "",
+  subtitle: "", // Optional subtitle
   location: "New York, NY",
   phone: "+1 (201) 406-5974",
   email: "jaeho2025@gmail.com",
@@ -88,7 +90,9 @@
 - Trained and optimized a deep learning model (Ultralytics YOLO) for real-time surgical instrument recognition in endoscopic sinus and skull-base procedures, achieving 96.4% precision, 94.8% recall, and 96.6% mAP50.
 - Designing an assistive device to improve surgeon ergonomics during extended procedures, assessing effectiveness through EMG-based fatigue analysis.
 - Conducted quantitative ergonomics studies of ENT surgeons using IMU (Opal V2R) and EMG (FREEEMG) sensor arrays; developing signal-processing pipelines for posture and mechanical-exposure analysis.
+
 #pagebreak()
+
 #work(
   position: "Undergraduate Researcher",
   details: "Dr. Mili Shah",
@@ -105,8 +109,6 @@
 
 == Publications
 // #bibliography("bib.bib", title: none, full: true, style: "ieee_cv.csl")
-
-// [1] J. Cho, C. Stonebraker et al., “Effect of a pilot, office-based ergonomic rhinology intervention on mechanical exposure, musculoskeletal symptoms, and usability.” *In progress*
 
 [1] C. Stonebraker, J. Cho et al., “Development of a Computer Vision System for Surgical Instrument Analysis During Endoscopic Sinus and Skull Base Surgery,” *Accepted* to the _2026 North American Skull Base Society (NASBS) Annual Meeting_ to be published in the _Journal of Neurological Surgery Part B: Skull Base_, 2026.
 
@@ -128,5 +130,5 @@
 
 == Skills
 
-- Programming: Python, MATLAB, Rust, C, C++, Verilog, VHDL, Git, Docker, JavaScript, SQL
-- Software: Cadence Virtuoso, LTspice, Altium, Vivado, Fusion360, ROS2, Gazebo, Blender, Onshape
+- *Programming*: Python, MATLAB, Rust, C, C++, Verilog, VHDL, Git, Docker, JavaScript, SQL
+- *Software*: Cadence Virtuoso, LTspice, Altium, Vivado, Fusion360, ROS2, Gazebo, Blender, Onshape

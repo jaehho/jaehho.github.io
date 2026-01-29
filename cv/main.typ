@@ -106,7 +106,7 @@
   end-date: "Dec 2025",
 )[
 - Developed signal-processing and machine-learning pipelines for vocalization analysis, including acoustic feature extraction, unsupervised clustering, dimensionality-reduction techniques, and deep neural models for syllable segmentation and classification.
-- Worked on a ROS2-based automated tutoring and data-collection robot that could enable long-duration, minimally supervised behavioral experiments.
+- Worked on a ROS2-based automated bird-tutoring and data-collection robot to enable long-duration, minimally supervised behavioral experiments in budgie vocal learning.
 ]
 
 

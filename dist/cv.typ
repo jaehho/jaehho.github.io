@@ -1,6 +1,6 @@
 #import "lib.typ": *
 
-#let name = "Curriculum Vitae | Jaeho Cho"
+#let name = "Jaeho Cho"
 
 #show: conf.with(
   author: name,
@@ -18,12 +18,12 @@
 
 #header(
   name: name,
-  subtitle: "Electrical & Computer Engineering Ph.D. at the University of Michigan Rackham Graduate School",
+  subtitle: "",
   location: "New York, NY",
   phone: "+1 (201) 406-5974",
   email: "jaeho2025@gmail.com",
   linkedin: "jaeho-cho",
-  website: "https://jaehho.github.io"
+  website: "jaehho.github.io"
 )
 
 

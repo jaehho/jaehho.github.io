@@ -57,17 +57,6 @@
 - Designed a chopper-stabilized low-noise amplifier in 65-nm CMOS using Cadence Virtuoso, achieving post-layout (PEX) verified performance of 41 dB gain over 0.6 Hz–5 kHz, 1.6 μW power consumption, and a noise-efficiency factor of 1.7.
 
 #work(
-  position: "Undergraduate Researcher",
-  details: "Dr. Michael Long",
-  company: "NYU Langone Health",
-  location: "New York, NY",
-  start-date: "Jun 2025",
-  end-date: "Present",
-)
-- Developed signal-processing and machine-learning pipelines for vocalization analysis, including acoustic feature extraction, unsupervised clustering, dimensionality-reduction techniques, and deep neural models for syllable segmentation and classification.
-- Engineered a ROS2-based automated tutoring and data-collection robot enabling long-duration, minimally supervised behavioral experiments.
-
-#work(
   position: "Independent Researcher",
   details: "Dr. Stanislav Mintchev, Dr. Brian Frost Laplante",
   company: "The Cooper Union for the Advancement of Science and Art",
@@ -75,23 +64,20 @@
   start-date: "Jan 2025",
   end-date: "Present",
 )
-- Develop theory identifying when simplified models of plastic spiking neural networks break down, and deriving corrected models that remain accurate as network dynamics change during learning.
-- Studied computational models of neural encoding and decoding, multi-compartment Hodgkin-Huxley dynamics, attractor networks, and plasticity rules in Python.
+- Developing theoretical criteria for when reduced models of plastic spiking neural networks fail, and deriving corrected formulations that remain accurate as network dynamics evolve during learning.
+- Investigated neural encoding and decoding through computational modeling of multi-compartment Hodgkin–Huxley neurons, attractor dynamics, and synaptic plasticity rules, implemented and analyzed in Python.
 
 #work(
-  position: "Undergraduate Researcher",
+  position: "Research Volunteer",
   details: "Dr. Jonathan Dropkin, Dr. Alfred Marc Iloreta",
   company: "The Icahn School of Medicine at Mount Sinai",
   location: "New York, NY",
   start-date: "Feb 2024",
   end-date: "Present",
 )
-- Built and evaluated multi-modal surgical workflow analysis pipelines using the Gemini API, synchronizing endoscopic and external OR video streams for surgical instrument and phase detection.
 - Trained and optimized a deep learning model (Ultralytics YOLO) for real-time surgical instrument recognition in endoscopic sinus and skull-base procedures, achieving 96.4% precision, 94.8% recall, and 96.6% mAP50.
-- Designing an assistive device to improve surgeon ergonomics during extended procedures, assessing effectiveness through EMG-based fatigue analysis.
+- Designing an assistive device to improve surgeon ergonomics during prolonged procedures, validating effectiveness through EMG-based muscle fatigue analysis and computer-vision–based posture assessment.
 - Conducted quantitative ergonomics studies of ENT surgeons using IMU (Opal V2R) and EMG (FREEEMG) sensor arrays; developing signal-processing pipelines for posture and mechanical-exposure analysis.
-
-#pagebreak()
 
 #work(
   position: "Undergraduate Researcher",
@@ -103,14 +89,23 @@
 )
 - Mentoring and training four students in ROS2, PCB design, circuit prototyping, and mechanical CAD workflows, as well as broader project framing and management skills.
 - Led development of a dual-arm robot; implemented motion-planning pipelines and web-based teleoperation using the ROS 2 framework. 
-- Building a small spherical robot for decentralized swarm self-assembly; designed and prototyped the mechanical structure and implemented communication and distributed-control routines.
+- Building a small mobile robot for decentralized swarm self-assembly: iteratively produced multiple designs in Fusion360; implemented peer-to-peer bluetooth communication and distributed-control routines.
 - Designed and fabricated a custom PCB for an e-textile sensor, presented at the 2024 ASTM International Exo Games.
+
+#work(
+  position: "Researcher Volunteer",
+  details: "Dr. Michael Long",
+  company: "NYU Langone Health",
+  location: "New York, NY",
+  start-date: "Jun 2025",
+  end-date: "Dec 2025",
+)
+- Developed signal-processing and machine-learning pipelines for vocalization analysis, including acoustic feature extraction, unsupervised clustering, dimensionality-reduction techniques, and deep neural models for syllable segmentation and classification.
+- Worked on a ROS2-based automated tutoring and data-collection robot that could enable long-duration, minimally supervised behavioral experiments.
 
 
 == Publications
-// #bibliography("bib.bib", title: none, full: true, style: "ieee_cv.csl")
-
-[1] C. Stonebraker, J. Cho et al., “Development of a Computer Vision System for Surgical Instrument Analysis During Endoscopic Sinus and Skull Base Surgery,” *Accepted* to the _2026 North American Skull Base Society (NASBS) Annual Meeting_ to be published in the _Journal of Neurological Surgery Part B: Skull Base_, 2026.
+#bibliography("bib.bib", title: none, full: true, style: "ieee")
 
 
 == Work Experience

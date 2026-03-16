@@ -32,11 +32,11 @@
         #{
           let fa-icon-size = 8pt
           let items = (
-            contact-helper(location, prefix: fa-icon("location-dot", size: fa-icon-size)),
-            contact-helper(phone, prefix: fa-icon("phone", size: fa-icon-size)),
-            contact-helper(email, prefix: fa-icon("envelope", size: fa-icon-size), link-type: "mailto:"),
+            contact-helper(location, prefix: fa-icon("location-dot", solid: true, size: fa-icon-size)),
+            contact-helper(phone, prefix: fa-icon("phone", solid: true, size: fa-icon-size)),
+            contact-helper(email, prefix: fa-icon("envelope", solid: true, size: fa-icon-size), link-type: "mailto:"),
             contact-helper(linkedin, prefix: fa-icon("linkedin-in", size: fa-icon-size), link-type: "https://linkedin.com/in/"),
-            contact-helper(website, prefix: fa-icon("link", size: fa-icon-size), link-type: "https://"),
+            contact-helper(website, prefix: fa-icon("link", solid: true, size: fa-icon-size), link-type: "https://"),
           )
           items.filter(x => x != none).join("    ")
         }

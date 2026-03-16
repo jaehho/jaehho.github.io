@@ -47,9 +47,9 @@
 #let contact-helper(value, prefix: "", link-type: "") = {
   if value != "" {
     if link-type != "" {
-      link(link-type + value)[#(prefix + " " + value)]
+      link(link-type + value)[#prefix #value]
     } else {
-      prefix + " " + value
+      [#prefix #value]
     }
   }
 }

@@ -25,7 +25,7 @@
     #if subtitle != "" {
       align(center, text(size: 16pt)[#subtitle])
     }
-    
+
     #pad(
       top: 0.25em,
       align(center)[

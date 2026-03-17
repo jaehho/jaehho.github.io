@@ -70,6 +70,6 @@
   // Accent Color Styling
   show heading: set text(fill: rgb(accent-color))
   show link: set text(fill: rgb(accent-color))
-  
+
   doc
 }

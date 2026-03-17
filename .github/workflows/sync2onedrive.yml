@@ -1,19 +1,23 @@
 name: Sync CV to OneDrive
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'dist/Jaeho_Cho_CV.pdf'
+  workflow_run:
+    workflows: ["Compile Typst Documents"]
+    types: [completed]
+    branches: [main]
 
 jobs:
   sync:
     runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+      - name: Download compiled PDFs
+        uses: actions/download-artifact@v4
+        with:
+          name: documents
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install rclone
         run: |
@@ -26,4 +30,4 @@ jobs:
 
       - name: Sync CV to OneDrive
         run: |
-          rclone copy dist/Jaeho_Cho_CV.pdf "Cooper Union OneDrive:" --progress
+          rclone copy Jaeho_Cho_CV.pdf "Cooper Union OneDrive:" --progress

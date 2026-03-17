@@ -1,10 +1,9 @@
-#import "lib.typ": *
-
-#let name = "Jaeho Cho"
+#import "shared/lib.typ": *
+#import "shared/data.typ" as data
 
 // Document Configuration
 #show: conf.with(
-  author: name,
+  author: data.name,
   paper: "us-letter",
   accent-color: "#000000",
   font: "New Computer Modern",
@@ -20,27 +19,27 @@
 
 // Header with Contact Information
 #header(
-  name: name,
-  subtitle: "", // Optional subtitle
-  location: "New York, NY",
-  phone: "+1 (201) 406-5974",
-  email: "jaeho2025@gmail.com",
-  linkedin: "jaeho-cho",
-  website: "jaehho.github.io"
+  name: data.name,
+  subtitle: "",
+  location: data.location,
+  phone: data.phone,
+  email: data.email,
+  linkedin: data.linkedin,
+  website: data.website,
 )
 
 
 == Education
 
 #edu(
-  institution: "The Cooper Union for the Advancement of Science and Art",
-  location: "New York City, NY",
-  start-date: "Aug 2022",
-  end-date: "May 2026*",
-  degree: "M.Eng, B.Eng in Electrical Engineering (Joint), Bioengineering Minor",
+  institution: data.education.institution,
+  location: data.education.location,
+  start-date: data.education.start-date,
+  end-date: data.education.end-date,
+  degree: data.education.degree,
 )[
-- Half Tuition Scholarship | Myron Coe Scholarship | Full Tuition Scholarship 2025-2026
-- Courses: Digital Signal Processing, Communication Theory, Engineering Electromagnetics, Digital VLSI System Design, Integrated Circuit Engineering, Theoretical Neuroscience
+- #data.education.scholarships
+- Courses: #data.education.courses
 ]
 
 
@@ -55,6 +54,7 @@
   end-date: "Present",
 )[
 - Conducting research on neuromorphic architectures for ultra-low-power brain–machine interfaces, with current efforts focused on designing a neuromorphic processing block (Analog-to-Digital Converter).
+- Designing LNA to better 
 - Designed a chopper-stabilized low-noise amplifier in 65-nm CMOS using Cadence Virtuoso, achieving post-layout (PEX) verified performance of 41 dB gain over 0.6 Hz–5 kHz, 1.6 μW power consumption, and a noise-efficiency factor of 1.7.
 ]
 
@@ -92,7 +92,7 @@
   end-date: "Present",
 )[
 - Mentoring and training four students in ROS2, PCB design, circuit prototyping, and mechanical CAD workflows, as well as broader project framing and management skills.
-- Led development of a dual-arm robot; implemented motion-planning pipelines and web-based teleoperation using the ROS 2 framework. 
+- Led development of a dual-arm robot; implemented motion-planning pipelines and web-based teleoperation using the ROS 2 framework.
 - Building a small mobile robot for decentralized swarm self-assembly: iteratively produced multiple designs in Fusion360; implemented peer-to-peer bluetooth communication and distributed-control routines.
 - Designed and fabricated a custom PCB for an e-textile sensor, presented at the 2024 ASTM International Exo Games.
 ]
@@ -132,5 +132,5 @@
 
 == Skills
 
-- *Programming*: Python, MATLAB, Rust, C, C++, Verilog, VHDL, Git, Docker, JavaScript, SQL
-- *Software*: Cadence Virtuoso, LTspice, Altium, Vivado, Fusion360, ROS2, Gazebo, Blender, Onshape
+- *Programming*: #data.skills-programming
+- *Software*: #data.skills-software

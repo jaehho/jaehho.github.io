@@ -1,0 +1,35 @@
+name: Compile Typst Documents
+
+on:
+  push:
+    branches: [main]
+    paths: ['cv/**']
+  workflow_dispatch:
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Typst
+        uses: typst-community/setup-typst@v4
+
+      - name: Compile CV
+        run: typst compile cv/cv.typ Jaeho_Cho_CV.pdf
+
+      - name: Compile Research Resume
+        run: typst compile cv/resume-research.typ Jaeho_Cho_Resume_Research.pdf
+
+      - name: Compile SWE Resume
+        run: typst compile cv/resume-swe.typ Jaeho_Cho_Resume_SWE.pdf
+
+      - name: Upload PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: documents
+          path: |
+            Jaeho_Cho_CV.pdf
+            Jaeho_Cho_Resume_Research.pdf
+            Jaeho_Cho_Resume_SWE.pdf

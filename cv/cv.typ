@@ -53,9 +53,7 @@
   start-date: "Jun 2025",
   end-date: "Present",
 )[
-- Conducting research on neuromorphic architectures for ultra-low-power brain–machine interfaces, with current efforts focused on designing a neuromorphic processing block (Analog-to-Digital Converter).
-- Designing LNA to better 
-- Designed a chopper-stabilized low-noise amplifier in 65-nm CMOS using Cadence Virtuoso, achieving post-layout (PEX) verified performance of 41 dB gain over 0.6 Hz–5 kHz, 1.6 μW power consumption, and a noise-efficiency factor of 1.7.
+- Designed a chopper-stabilized low-noise amplifier in 65-nm CMOS using Cadence Virtuoso as a front-end for ultra-low-power neuromorphic brain–machine interfaces, achieving post-layout (PEX) verified 41 dB gain over 0.6 Hz–5 kHz, 1.6 μW power consumption, and a noise-efficiency factor of 1.7.
 ]
 
 #work(
@@ -67,7 +65,7 @@
   end-date: "Present",
 )[
 - Developing theoretical criteria for when reduced models of plastic spiking neural networks fail, and deriving corrected formulations that remain accurate as network dynamics evolve during learning.
-- Investigated neural encoding and decoding through computational modeling of multi-compartment Hodgkin–Huxley neurons, attractor dynamics, and synaptic plasticity rules, implemented and analyzed in Python.
+- Analyzing minimal two-neuron spiking networks via Python-based Hodgkin–Huxley simulations to extract geometrical descriptions of how plasticity-driven dynamics shape learning in neural circuits.
 ]
 
 #work(
@@ -78,7 +76,7 @@
   start-date: "Feb 2024",
   end-date: "Present",
 )[
-- Trained and optimized a deep learning model (Ultralytics YOLO) for real-time surgical instrument recognition in endoscopic sinus and skull-base procedures, achieving 96.4% precision, 94.8% recall, and 96.6% mAP50.
+- Training and refining a deep learning model (Ultralytics YOLO) for real-time surgical instrument recognition in endoscopic sinus and skull-base procedures, achieving 96.4% precision, 94.8% recall, and 96.6% mAP50 while expanding to new surgical datasets.
 - Designing an assistive device to improve surgeon ergonomics during prolonged procedures, validating effectiveness through EMG-based muscle fatigue analysis and computer-vision–based posture assessment.
 - Conducted quantitative ergonomics studies of ENT surgeons using IMU (Opal V2R) and EMG (FREEEMG) sensor arrays; developing signal-processing pipelines for posture and mechanical-exposure analysis.
 ]
@@ -91,9 +89,8 @@
   start-date: "Sep 2023",
   end-date: "Present",
 )[
-- Mentoring and training four students in ROS2, PCB design, circuit prototyping, and mechanical CAD workflows, as well as broader project framing and management skills.
+- Leading a team of six students in developing an ultra-low-cost mobile robot for disposable field exploration, mentoring in ROS 2, PCB design, electronics prototyping, and mechanical CAD.
 - Led development of a dual-arm robot; implemented motion-planning pipelines and web-based teleoperation using the ROS 2 framework.
-- Building a small mobile robot for decentralized swarm self-assembly: iteratively produced multiple designs in Fusion360; implemented peer-to-peer bluetooth communication and distributed-control routines.
 - Designed and fabricated a custom PCB for an e-textile sensor, presented at the 2024 ASTM International Exo Games.
 ]
 

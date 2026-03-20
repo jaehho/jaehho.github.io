@@ -127,7 +127,43 @@
 ]
 
 
+== Projects
+
+#project(
+  name: "RF Front End Circuit",
+)[\
+- Designed and built a Colpitts Oscillator and RC Oscillator to generate a 4.1 MHz local oscillator (LO) signal.
+- Created a single-balanced active mixer utilizing the LO signal to down-convert a 3.63 MHz RF signal.
+- Incorporated a passive low-pass filter with a 1.6 MHz cutoff frequency after the mixing to attenuate high frequency harmonics.
+- Simulated circuit in LTspice using MOSFETs, decoupling and AC coupling caps, op-amps, feedback networks, a crystal oscillator, etc.
+]
+
+#project(
+  name: "VLSI High Frequency Differential Operational Amplifier",
+)[\
+- Designed an IC differential-to-single-ended amplifier in Cadence Virtuoso for bluetooth low energy using the TSMC 65nm PDK.
+- Met target parameters with CMOS: 24 dB gain at 2.4 GHz, \<500 µW power consumption, unity-gain frequency of 10.2 GHz.
+- Completed IC design layout with M1-M9 layers with no LVS errors and no DRC errors.
+]
+
+#project(
+  name: "The Theremin: A Musical Instrument",
+)[\
+- Designed and built an analog Theremin, utilizing operational amplifiers and basic circuit components to construct oscillators, voltage followers, envelope detectors, and amplifiers.
+- Debugged and troubleshot with an oscilloscope to achieve reliable and recognizable audio output with minimal noise.
+]
+
+#project(
+  name: "Tetris: A Digital Logic Arcade Game",
+)[\
+- Worked on a team to recreate Tetris using sequential and combinational logic, and integrated circuit chips such as RAM chips, flip-flops, multiplexers, counters, and logic gates.
+- Designed and simulated the digital circuit using Logisim and implemented the design with breadboards.
+- Utilized truth tables, Boolean algebra, Karnaugh-maps, and timing diagrams to design the circuit.
+]
+
+
 == Skills
 
 - *Programming*: #data.skills-programming
 - *Software*: #data.skills-software
+- *Hardware*: #data.skills-hardware

@@ -22,13 +22,7 @@
   left: "",
   right: "",
 ) = {
-  block(
-    width: 100%,
-    breakable: true,
-    [
-      #left #h(1fr) #right
-    ]
-  )
+  [#left #h(1fr) #right]
 }
 
 // Helper to format date ranges

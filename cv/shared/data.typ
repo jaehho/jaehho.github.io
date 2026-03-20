@@ -18,7 +18,8 @@
 )
 
 #let skills-programming = "Python, MATLAB, Rust, C, C++, Verilog, VHDL, Git, Docker, JavaScript, SQL"
-#let skills-software = "Cadence Virtuoso, LTspice, Altium, Vivado, Fusion360, ROS2, Gazebo, Blender, Onshape"
+#let skills-software = "Cadence Virtuoso, LTspice, Altium, Vivado, PSim, Fusion360, ROS2, Gazebo, Blender, Onshape"
+#let skills-hardware = "PCB Design and Debugging, Network Analyzer, Oscilloscope, Function Generator, Analog & Digital Circuits, FPGA (Xilinx ZedBoard), Digital Multimeter (DMM), Soldering Iron and Heat Gun"
 
 // Research-focused skill emphasis
 #let skills-research-programming = "Python, MATLAB, C, C++, Verilog, VHDL, Git"

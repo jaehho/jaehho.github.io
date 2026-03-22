@@ -93,25 +93,25 @@
 
 == Projects
 
-#project(..data.project.vlsi.header)[\
+#project(name: data.project.vlsi.header.name)[\
 - #data.project.vlsi.bullets.design
 - #data.project.vlsi.bullets.metrics
 - #data.project.vlsi.bullets.layout
 ]
 
-#project(..data.project.rf.header)[\
+#project(name: data.project.rf.header.name)[\
 - #data.project.rf.bullets.oscillator
 - #data.project.rf.bullets.mixer
 - #data.project.rf.bullets.filter
 - #data.project.rf.bullets.simulation
 ]
 
-#project(..data.project.theremin.header)[\
+#project(name: data.project.theremin.header.name)[\
 - #data.project.theremin.bullets.design
 - #data.project.theremin.bullets.debug
 ]
 
-#project(..data.project.tetris.header)[\
+#project(name: data.project.tetris.header.name)[\
 - #data.project.tetris.bullets.implementation
 - #data.project.tetris.bullets.simulation
 - #data.project.tetris.bullets.design

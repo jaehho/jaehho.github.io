@@ -30,8 +30,10 @@
   start-date: "",
   end-date: "",
 ) = {
-  if end-date != "" {
+  if start-date != "" and end-date != "" {
     start-date + " " + sym.dash.en + " " + end-date
+  } else if end-date != "" {
+    end-date
   } else {
     start-date
   }

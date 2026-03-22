@@ -16,7 +16,7 @@
       #set align(center)
       #set text(
         weight: 700,
-        size: 20pt,
+        size: 18pt,
       )
       #pad(it.body)
     ]
@@ -30,7 +30,7 @@
       top: 0.25em,
       align(center)[
         #{
-          let fa-icon-size = 8pt
+          let fa-icon-size = 9pt
           let items = (
             contact-helper(location, prefix: fa-icon("location-dot", solid: true, size: fa-icon-size)),
             contact-helper(phone, prefix: fa-icon("phone", solid: true, size: fa-icon-size)),

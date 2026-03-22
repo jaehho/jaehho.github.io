@@ -46,26 +46,22 @@
   set par(
     leading: paragraph-leading,
     spacing: paragraph-spacing,
-    justify: true,
+    justify: false,
   )
 
   // List formatting
   set list(
     indent: 1em,
+    spacing: 0.65em,
   )
 
   // Section headings (Level 2)
-  show heading.where(level: 2): it => [
-    #v(0.5em)
-    #pad(
-      top: 0em,
-      bottom: section-heading-margin-bottom,
-      block(width: 100%)[
-        #smallcaps(it.body)
-        #place(dy: 0.3em, line(length: 100%, stroke: 0.5pt))
-      ]
-    )
-  ]
+  show heading.where(level: 2): it => {
+    block(above: section-heading-margin-top, below: section-heading-margin-bottom, width: 100%)[
+      #smallcaps(it.body)
+      #place(dy: 0.3em, line(length: 100%, stroke: 0.5pt))
+    ]
+  }
 
   // Accent Color Styling
   show heading: set text(fill: rgb(accent-color))

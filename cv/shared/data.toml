@@ -1,0 +1,229 @@
+# Personal
+
+name = "Jaeho Cho"
+location = "New York, NY"
+phone = "+1 (201) 406-5974"
+email = "jaeho2025@gmail.com"
+linkedin = "jaeho-cho"
+website = "jaehho.github.io"
+
+# Education
+
+[education]
+institution = "The Cooper Union for the Advancement of Science and Art"
+location = "New York City, NY"
+start-date = "Aug 2022"
+end-date = "May 2026*"
+degree = "M.Eng, B.Eng in Electrical Engineering (Joint), Bioengineering Minor"
+scholarships = "Half Tuition Scholarship | Myron Coe Scholarship | Full Tuition Scholarship 2025-2026"
+
+# Courses
+
+[courses.ee]
+logic = "Digital Logic Design"
+circuits = "Circuit Analysis"
+signals = "Signal Processing"
+electronics-i = "Electronics I"
+electronics-ii = "Electronics II"
+comparch = "Computer Architecture"
+dsa = "Data Structures & Algorithms I"
+commtheory = "Communication Theory"
+dsp = "Digital Signal Processing"
+hwdesign = "Hardware Design"
+stochastic = "Probability Models & Stochastic Processes"
+emag = "Engineering Electromagnetics"
+ic = "Integrated Circuit Engineering"
+fourier = "Fourier Optics"
+vlsi = "Digital VLSI System Design"
+commnets = "Communication Networks"
+
+[courses.ml]
+freqml = "Frequentist Machine Learning"
+ds4sg = "Data Science for Social Good"
+
+[courses.bio]
+imaging = "Medical Imaging"
+bioinstr = "Bio-Instrumentation & Sensing"
+bioelec = "Advances in Bioelectronics"
+microfab = "Microfabrication & Biomedical Device Design"
+biomaterials = "Biomaterials"
+sportmed = "Bioengineering Applications in Sports Medicine"
+bio-i = "Biology for Engineers I"
+bio-ii = "Biology for Engineers II"
+
+[courses.neuro]
+theoneuro = "Research Problems in Theoretical Neuroscience"
+mathneurosci = "Mathematical Neuroscience"
+netsys = "Network Dynamical Systems Modeling"
+
+[courses.math]
+calc-i = "Calculus I"
+calc-ii = "Calculus II"
+intro-linalg = "Intro to Linear Algebra"
+linalg = "Linear Algebra"
+veccalc = "Vector Calculus"
+diffeq = "Ordinary & Partial Differential Equations"
+prob = "Probability"
+
+[courses.physics]
+mech = "Physics I: Mechanics"
+emph = "Physics II: Electromagnetic Phenomena"
+optics = "Physics III: Optics & Modern"
+
+[courses.chem]
+genchem = "General Chemistry"
+genchemlab = "General Chemistry Laboratory"
+
+[courses.hss]
+freshsem = "Freshman Seminar"
+texts = "Texts & Contexts: Old Worlds"
+modsoc = "The Making of Modern Society"
+modctx = "The Modern Context"
+fascism = "20th Century History: Fascism"
+writing = "Creative Writing"
+
+[courses.design]
+edps = "Engineering Design & Problem Solving"
+progee = "Programming for Electrical Engineering"
+
+[courses.projects]
+soph = "Sophomore Electrical Engineering Projects"
+junior-i = "Junior Electrical Engineering Projects I"
+junior-ii = "Junior Electrical Engineering Projects II"
+senior-i = "Senior Electrical Engineering Projects I"
+senior-ii = "Senior Electrical Engineering Projects II"
+thesis = "Thesis/Project"
+
+[courses.vip]
+vip = "VI Projects: Bioengineering"
+frontiers = "Frontiers of Bioengineering"
+
+# Skills
+
+[skills]
+programming = "Python, MATLAB, Rust, C, C++, Verilog, VHDL, Git, Docker, JavaScript, SQL"
+software = "Cadence Virtuoso, LTspice, Altium, Vivado, PSim, Fusion360, ROS2, Gazebo, Blender, Onshape"
+hardware = "PCB Design and Debugging, Network Analyzer, Oscilloscope, Function Generator, Analog & Digital Circuits, FPGA (Xilinx ZedBoard), Digital Multimeter (DMM), Soldering Iron and Heat Gun"
+
+[skills.vlsi]
+programming = "Verilog, VHDL, Python, MATLAB, C, C++, Git"
+eda = "Cadence Virtuoso, LTspice, Altium, Vivado, PSim"
+
+# Experience
+
+[experience.pwc.header]
+position = "Data and AI Intern"
+details = "Hanwha TotalEnergies Petrochemical"
+company = "PwC"
+location = "Seoul, South Korea"
+start-date = "May 2024"
+end-date = "Aug 2024"
+
+[experience.pwc.bullets]
+forecasting = "Developed time-series forecasting models using GluonTS, Chronos, and Darts to generate three-month market predictions for petrochemical products."
+django = "Refactored Django backend pipelines during a transition from MongoDB to ClickHouse, improving data throughput and service latency."
+aggregation = "Implemented a Django-based article aggregation service integrating private and public APIs to support LLM-driven sentiment analysis."
+
+[experience.thesis.header]
+position = "Master's Thesis"
+details = "Dr. Jabeom Koo"
+company = "The Cooper Union for the Advancement of Science and Art"
+location = "New York, NY"
+start-date = "Jun 2025"
+end-date = "Present"
+
+[experience.thesis.bullets]
+lna-design = "Designed a chopper-stabilized low-noise amplifier in 65-nm CMOS using Cadence Virtuoso as a front-end for ultra-low-power neuromorphic brain–machine interfaces."
+lna-metrics = "Achieved post-layout (PEX) verified 41 dB gain over 0.6 Hz–5 kHz, 1.6 μW power consumption, and a noise-efficiency factor of 1.7."
+
+[experience.mintchev.header]
+position = "Independent Researcher"
+details = "Dr. Stanislav Mintchev, Dr. Brian Frost Laplante"
+company = "The Cooper Union for the Advancement of Science and Art"
+location = "New York, NY"
+start-date = "Jan 2025"
+end-date = "Present"
+
+[experience.mintchev.bullets]
+plasticity = "Developing theoretical criteria for when reduced models of plastic spiking neural networks fail, and deriving corrected formulations that remain accurate as network dynamics evolve during learning."
+hh-simulations = "Analyzing minimal two-neuron spiking networks via Python-based Hodgkin–Huxley simulations to extract geometrical descriptions of how plasticity-driven dynamics shape learning in neural circuits."
+
+[experience.sinai.header]
+position = "Research Volunteer"
+details = "Dr. Jonathan Dropkin, Dr. Alfred Marc Iloreta"
+company = "The Icahn School of Medicine at Mount Sinai"
+location = "New York, NY"
+start-date = "Feb 2024"
+end-date = "Present"
+
+[experience.sinai.bullets]
+yolo = "Training and refining a deep learning model (Ultralytics YOLO) for real-time surgical instrument recognition in endoscopic sinus and skull-base procedures."
+yolo-metrics = "Achieved 96.4% precision, 94.8% recall, and 96.6% mAP50 while expanding to new surgical datasets."
+ergo-device = "Designing an assistive device to improve surgeon ergonomics during prolonged procedures."
+ergo-validate = "Validating effectiveness through EMG-based muscle fatigue analysis and computer-vision–based posture assessment."
+ergo-imu = "Conducted quantitative ergonomics studies of ENT surgeons using IMU (Opal V2R) and EMG (FREEEMG) sensor arrays; developing signal-processing pipelines for posture and mechanical-exposure analysis."
+
+[experience.shah.header]
+position = "Undergraduate Researcher"
+details = "Dr. Mili Shah"
+company = "The Cooper Union for the Advancement of Science and Art"
+location = "New York, NY"
+start-date = "Sep 2023"
+end-date = "Present"
+
+[experience.shah.bullets]
+team-lead = "Leading a team of six students in developing an ultra-low-cost mobile robot for disposable field exploration."
+mentoring = "Mentoring team members in ROS 2, PCB design, electronics prototyping, and mechanical CAD."
+dual-arm = "Led development of a dual-arm robot; implemented motion-planning pipelines and web-based teleoperation using the ROS 2 framework."
+pcb = "Designed and fabricated a custom PCB for an e-textile sensor, presented at the 2024 ASTM International Exo Games."
+
+[experience.nyu.header]
+position = "Research Volunteer"
+details = "Dr. Michael Long"
+company = "NYU Langone Health"
+location = "New York, NY"
+start-date = "Jun 2025"
+end-date = "Dec 2025"
+
+[experience.nyu.bullets]
+pipelines = "Developed signal-processing and machine-learning pipelines for vocalization analysis, including acoustic feature extraction, unsupervised clustering, and dimensionality reduction."
+neural-models = "Trained deep neural models for syllable segmentation and classification."
+robot = "Developed a ROS2-based automated bird-tutoring and data-collection robot to enable long-duration, minimally supervised behavioral experiments in budgie vocal learning."
+
+# Projects
+
+[project.vlsi.header]
+name = "VLSI High Frequency Differential Operational Amplifier"
+end-date = "2024"
+
+[project.vlsi.bullets]
+design = "Designed an IC differential-to-single-ended amplifier in Cadence Virtuoso for Bluetooth Low Energy using the TSMC 65nm PDK."
+metrics = "Met target parameters with CMOS: 24 dB gain at 2.4 GHz, <500 µW power consumption, unity-gain frequency of 10.2 GHz."
+layout = "Completed IC design layout with M1-M9 layers with no LVS errors and no DRC errors."
+
+[project.rf.header]
+name = "RF Front End Circuit"
+end-date = "2024"
+
+[project.rf.bullets]
+oscillator = "Designed and built a Colpitts Oscillator and RC Oscillator to generate a 4.1 MHz local oscillator (LO) signal."
+mixer = "Created a single-balanced active mixer utilizing the LO signal to down-convert a 3.63 MHz RF signal."
+filter = "Incorporated a passive low-pass filter with a 1.6 MHz cutoff frequency after the mixing to attenuate high frequency harmonics."
+simulation = "Simulated circuit in LTspice using MOSFETs, decoupling and AC coupling caps, op-amps, feedback networks, a crystal oscillator, etc."
+
+[project.theremin.header]
+name = "The Theremin: A Musical Instrument"
+end-date = "2023"
+
+[project.theremin.bullets]
+design = "Designed and built an analog Theremin, utilizing operational amplifiers and basic circuit components to construct oscillators, voltage followers, envelope detectors, and amplifiers."
+debug = "Debugged and troubleshot with an oscilloscope to achieve reliable and recognizable audio output with minimal noise."
+
+[project.tetris.header]
+name = "Tetris: A Digital Logic Arcade Game"
+end-date = "2022"
+
+[project.tetris.bullets]
+implementation = "Recreated Tetris using sequential and combinational logic with integrated circuit chips including RAM, flip-flops, multiplexers, counters, and logic gates."
+simulation = "Designed and simulated the digital circuit using Logisim and implemented the design with breadboards."
+design = "Utilized truth tables, Boolean algebra, Karnaugh-maps, and timing diagrams to design the circuit."

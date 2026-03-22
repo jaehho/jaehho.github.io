@@ -13,7 +13,7 @@ website = "jaehho.github.io"
 institution = "The Cooper Union for the Advancement of Science and Art"
 location = "New York City, NY"
 start-date = "Aug 2022"
-end-date = "May 2026*"
+end-date = "May 2026"
 degree = "M.Eng, B.Eng in Electrical Engineering (Joint), Bioengineering Minor"
 scholarships = "Half Tuition Scholarship | Myron Coe Scholarship | Full Tuition Scholarship 2025-2026"
 
@@ -103,11 +103,7 @@ frontiers = "Frontiers of Bioengineering"
 [skills]
 programming = "Python, MATLAB, Rust, C, C++, Verilog, VHDL, Git, Docker, JavaScript, SQL"
 software = "Cadence Virtuoso, LTspice, Altium, Vivado, PSim, Fusion360, ROS2, Gazebo, Blender, Onshape"
-hardware = "PCB Design and Debugging, Network Analyzer, Oscilloscope, Function Generator, Analog & Digital Circuits, FPGA (Xilinx ZedBoard), Digital Multimeter (DMM), Soldering Iron and Heat Gun"
-
-[skills.vlsi]
-programming = "Verilog, VHDL, Python, MATLAB, C, C++, Git"
-eda = "Cadence Virtuoso, LTspice, Altium, Vivado, PSim"
+hardware = "Network Analyzer, Oscilloscope, Function Generator, PCB Layout & Debug"
 
 # Experience
 
@@ -120,9 +116,9 @@ start-date = "May 2024"
 end-date = "Aug 2024"
 
 [experience.pwc.bullets]
-forecasting = "Developed time-series forecasting models using GluonTS, Chronos, and Darts to generate three-month market predictions for petrochemical products."
-django = "Refactored Django backend pipelines during a transition from MongoDB to ClickHouse, improving data throughput and service latency."
-aggregation = "Implemented a Django-based article aggregation service integrating private and public APIs to support LLM-driven sentiment analysis."
+forecasting = "Built time-series forecasting models (GluonTS, Chronos, Darts) for three-month petrochemical predictions."
+django = "Refactored Django pipelines for MongoDB-to-ClickHouse migration, improving data throughput and latency."
+aggregation = "Built a Django article aggregation service integrating private and public APIs for LLM-driven sentiment analysis."
 
 [experience.thesis.header]
 position = "Master's Thesis"
@@ -133,8 +129,8 @@ start-date = "Jun 2025"
 end-date = "Present"
 
 [experience.thesis.bullets]
-lna-design = "Designed a chopper-stabilized low-noise amplifier in 65-nm CMOS using Cadence Virtuoso as a front-end for ultra-low-power neuromorphic brain–machine interfaces."
-lna-metrics = "Achieved post-layout (PEX) verified 41 dB gain over 0.6 Hz–5 kHz, 1.6 μW power consumption, and a noise-efficiency factor of 1.7."
+lna-design = "Designing a chopper-stabilized low-noise amplifier in 65-nm CMOS for ultra-low-power brain–machine interfaces."
+lna-metrics = "Achieved post-layout (PEX) verified 41 dB gain (0.6 Hz–5 kHz), 1.6 μW power, and noise-efficiency factor of 1.7."
 
 [experience.mintchev.header]
 position = "Independent Researcher"
@@ -157,7 +153,7 @@ start-date = "Feb 2024"
 end-date = "Present"
 
 [experience.sinai.bullets]
-yolo = "Training and refining a deep learning model (Ultralytics YOLO) for real-time surgical instrument recognition in endoscopic sinus and skull-base procedures."
+yolo = "Training a deep learning model for surgical instrument recognition in endoscopic sinus and skull-base procedures."
 yolo-metrics = "Achieved 96.4% precision, 94.8% recall, and 96.6% mAP50 while expanding to new surgical datasets."
 ergo-device = "Designing an assistive device to improve surgeon ergonomics during prolonged procedures."
 ergo-validate = "Validating effectiveness through EMG-based muscle fatigue analysis and computer-vision–based posture assessment."
@@ -174,8 +170,8 @@ end-date = "Present"
 [experience.shah.bullets]
 team-lead = "Leading a team of six students in developing an ultra-low-cost mobile robot for disposable field exploration."
 mentoring = "Mentoring team members in ROS 2, PCB design, electronics prototyping, and mechanical CAD."
-dual-arm = "Led development of a dual-arm robot; implemented motion-planning pipelines and web-based teleoperation using the ROS 2 framework."
-pcb = "Designed and fabricated a custom PCB for an e-textile sensor, presented at the 2024 ASTM International Exo Games."
+dual-arm = "Led development of a dual-arm robot; implemented motion-planning and web-based teleoperation in ROS 2."
+pcb = "Designed and fabricated a custom e-textile sensor PCB, presented at the 2024 ASTM International Exo Games."
 
 [experience.nyu.header]
 position = "Research Volunteer"
@@ -186,9 +182,9 @@ start-date = "Jun 2025"
 end-date = "Dec 2025"
 
 [experience.nyu.bullets]
-pipelines = "Developed signal-processing and machine-learning pipelines for vocalization analysis, including acoustic feature extraction, unsupervised clustering, and dimensionality reduction."
+pipelines = "Built signal-processing and ML pipelines for vocalization analysis, including feature extraction and clustering."
 neural-models = "Trained deep neural models for syllable segmentation and classification."
-robot = "Developed a ROS2-based automated bird-tutoring and data-collection robot to enable long-duration, minimally supervised behavioral experiments in budgie vocal learning."
+robot = "Developed a ROS2-based automated bird-tutoring robot for minimally supervised vocal learning experiments."
 
 # Projects
 
@@ -197,8 +193,8 @@ name = "VLSI High Frequency Differential Operational Amplifier"
 end-date = "2024"
 
 [project.vlsi.bullets]
-design = "Designed an IC differential-to-single-ended amplifier in Cadence Virtuoso for Bluetooth Low Energy using the TSMC 65nm PDK."
-metrics = "Met target parameters with CMOS: 24 dB gain at 2.4 GHz, <500 µW power consumption, unity-gain frequency of 10.2 GHz."
+design = "Designed a differential-to-single-ended amplifier for Bluetooth Low Energy in Cadence Virtuoso (TSMC 65nm)."
+metrics = "Met target specifications: 24 dB gain at 2.4 GHz, <500 µW power consumption, 10.2 GHz unity-gain frequency."
 layout = "Completed IC design layout with M1-M9 layers with no LVS errors and no DRC errors."
 
 [project.rf.header]
@@ -208,16 +204,24 @@ end-date = "2024"
 [project.rf.bullets]
 oscillator = "Designed and built a Colpitts Oscillator and RC Oscillator to generate a 4.1 MHz local oscillator (LO) signal."
 mixer = "Created a single-balanced active mixer utilizing the LO signal to down-convert a 3.63 MHz RF signal."
-filter = "Incorporated a passive low-pass filter with a 1.6 MHz cutoff frequency after the mixing to attenuate high frequency harmonics."
-simulation = "Simulated circuit in LTspice using MOSFETs, decoupling and AC coupling caps, op-amps, feedback networks, a crystal oscillator, etc."
+filter = "Integrated a passive low-pass filter with a 1.6 MHz cutoff frequency to attenuate high-frequency harmonics."
+simulation = "Simulated circuit in LTspice using MOSFETs, coupling caps, op-amps, feedback networks, and crystal oscillator."
 
 [project.theremin.header]
 name = "The Theremin: A Musical Instrument"
 end-date = "2023"
 
 [project.theremin.bullets]
-design = "Designed and built an analog Theremin, utilizing operational amplifiers and basic circuit components to construct oscillators, voltage followers, envelope detectors, and amplifiers."
-debug = "Debugged and troubleshot with an oscilloscope to achieve reliable and recognizable audio output with minimal noise."
+design = "Designed and built an analog Theremin using op-amps and basic components to construct oscillators, voltage followers, envelope detectors, and amplifiers."
+debug = "Debugged with an oscilloscope to achieve reliable, recognizable audio output with minimal noise."
+
+[project.flappy.header]
+name = "Flappy Bird FPGA Implementation"
+end-date = "2024"
+
+[project.flappy.bullets]
+design = "Designed and implemented a Flappy Bird game using Verilog on a Xilinx ZedBoard FPGA."
+logic = "Created logic for collision detection and randomized pipe generation using combinational and sequential logic."
 
 [project.tetris.header]
 name = "Tetris: A Digital Logic Arcade Game"

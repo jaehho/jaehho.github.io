@@ -38,7 +38,8 @@
   end-date: data.education.end-date,
   degree: data.education.degree,
 )[
-- Courses: #(data.courses.ee.vlsi, data.courses.ee.ic, data.courses.ee.hwdesign, data.courses.ee.comparch, "Electronics I & II", data.courses.ee.dsp, data.courses.ee.emag).join(", ")
+- #data.education.scholarships
+- Courses: #(data.courses.ee.vlsi, data.courses.ee.ic, data.courses.ee.hwdesign, data.courses.ee.comparch, data.courses.ee.dsp, data.courses.ee.emag, data.courses.ee.stochastic).join(", ")
 ]
 
 
@@ -54,6 +55,16 @@
 - #data.experience.shah.bullets.pcb
 ]
 
+#work(..data.experience.sinai.header)[
+- #data.experience.sinai.bullets.yolo
+- #data.experience.sinai.bullets.yolo-metrics
+]
+
+#work(..data.experience.nyu.header)[
+- #data.experience.nyu.bullets.pipelines
+- #data.experience.nyu.bullets.robot
+]
+
 
 == Projects
 
@@ -66,13 +77,17 @@
 #project(name: data.project.rf.header.name)[\
 - #data.project.rf.bullets.oscillator
 - #data.project.rf.bullets.mixer
+- #data.project.rf.bullets.filter
 - #data.project.rf.bullets.simulation
 ]
 
-#project(name: data.project.tetris.header.name)[\
-- #data.project.tetris.bullets.implementation
-- #data.project.tetris.bullets.design
+
+
+#project(name: data.project.flappy.header.name)[\
+- #data.project.flappy.bullets.design
+- #data.project.flappy.bullets.logic
 ]
+
 
 
 == Work Experience
@@ -80,11 +95,12 @@
 #work(..data.experience.pwc.header)[
 - #data.experience.pwc.bullets.forecasting
 - #data.experience.pwc.bullets.django
+- #data.experience.pwc.bullets.aggregation
 ]
 
 
 == Skills
 
-- *Programming*: #data.skills.vlsi.programming
-- *EDA Tools*: #data.skills.vlsi.eda
+- *Programming*: #data.skills.programming
+- *Software*: #data.skills.software
 - *Hardware*: #data.skills.hardware

@@ -79,7 +79,7 @@
 
 
 == Publications
-#bibliography("bib.bib", title: none, full: true, style: "ieee")
+#bibliography("publications.bib", title: none, full: true, style: "ieee")
 
 
 == Work Experience

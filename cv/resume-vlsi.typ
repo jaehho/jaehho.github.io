@@ -8,9 +8,9 @@
   accent-color: "#000000",
   font: "New Computer Modern",
   font-size: 10pt,
-  paragraph-leading: 0.55em,
+  paragraph-leading: 0.5em,
   paragraph-spacing: 0.8em,
-  section-heading-margin-top: 1.0em,
+  section-heading-margin-top: 0.87em,
   section-heading-margin-bottom: 0.6em,
   page-margin: 0.6in,
   border-margin: 0.3in,
@@ -46,18 +46,17 @@
 == Research Experience
 
 #work(..data.experience.thesis.header)[
-- #data.experience.thesis.bullets.lna-design
-- #data.experience.thesis.bullets.lna-metrics
+- #data.experience.thesis.bullets.lna
 ]
 
 #work(..data.experience.shah.header)[
 - #data.experience.shah.bullets.dual-arm
-- #data.experience.shah.bullets.pcb
+- #data.experience.shah.bullets.exo-pcb
+- #data.experience.shah.bullets.robot-pcb
 ]
 
 #work(..data.experience.sinai.header)[
 - #data.experience.sinai.bullets.yolo
-- #data.experience.sinai.bullets.yolo-metrics
 ]
 
 #work(..data.experience.nyu.header)[

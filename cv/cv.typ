@@ -47,33 +47,28 @@
 == Research Experience
 
 #work(..data.experience.thesis.header)[
-- #data.experience.thesis.bullets.lna-design
-- #data.experience.thesis.bullets.lna-metrics
+- #data.experience.thesis.bullets.lna
 ]
 
 #work(..data.experience.mintchev.header)[
-- #data.experience.mintchev.bullets.plasticity
-- #data.experience.mintchev.bullets.hh-simulations
+- #data.experience.mintchev.bullets.stdp
 ]
 
 #work(..data.experience.sinai.header)[
 - #data.experience.sinai.bullets.yolo
-- #data.experience.sinai.bullets.yolo-metrics
 - #data.experience.sinai.bullets.ergo-device
-- #data.experience.sinai.bullets.ergo-validate
 - #data.experience.sinai.bullets.ergo-imu
 ]
 
 #work(..data.experience.shah.header)[
 - #data.experience.shah.bullets.team-lead
-- #data.experience.shah.bullets.mentoring
 - #data.experience.shah.bullets.dual-arm
-- #data.experience.shah.bullets.pcb
+- #data.experience.shah.bullets.exo-pcb
+- #data.experience.shah.bullets.robot-pcb
 ]
 
 #work(..data.experience.nyu.header)[
 - #data.experience.nyu.bullets.pipelines
-- #data.experience.nyu.bullets.neural-models
 - #data.experience.nyu.bullets.robot
 ]
 

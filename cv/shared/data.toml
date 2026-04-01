@@ -129,8 +129,7 @@ start-date = "Jun 2025"
 end-date = "Present"
 
 [experience.thesis.bullets]
-lna-design = "Designing a chopper-stabilized low-noise amplifier in 65-nm CMOS for ultra-low-power brain–machine interfaces."
-lna-metrics = "Achieved post-layout (PEX) verified 41 dB gain (0.6 Hz–5 kHz), 1.6 μW power, and noise-efficiency factor of 1.7."
+lna = "Designing a chopper-stabilized low-noise amplifier in 65-nm CMOS for ultra-low-power brain–machine interfaces, achieving post-layout (PEX) verified 41 dB gain (0.6 Hz–5 kHz), 1.6 μW power, and noise-efficiency factor of 1.7."
 
 [experience.mintchev.header]
 position = "Independent Researcher"
@@ -141,8 +140,7 @@ start-date = "Jan 2025"
 end-date = "Present"
 
 [experience.mintchev.bullets]
-plasticity = "Developing theoretical criteria for when reduced models of plastic spiking neural networks fail, and deriving corrected formulations that remain accurate as network dynamics evolve during learning."
-hh-simulations = "Analyzing minimal two-neuron spiking networks via Python-based Hodgkin–Huxley simulations to extract geometrical descriptions of how plasticity-driven dynamics shape learning in neural circuits."
+stdp = "Investigating spatial credit assignment in neoHebbian three-factor STDP spiking networks, mapping where synaptic learning converges, saturates, or fails across initial conditions, parameter space, and neuromodulatory signals conveying reward prediction error or novelty."
 
 [experience.sinai.header]
 position = "Research Volunteer"
@@ -153,11 +151,9 @@ start-date = "Feb 2024"
 end-date = "Present"
 
 [experience.sinai.bullets]
-yolo = "Training a deep learning model for surgical instrument recognition in endoscopic sinus and skull-base procedures."
-yolo-metrics = "Achieved 96.4% precision, 94.8% recall, and 96.6% mAP50 while expanding to new surgical datasets."
-ergo-device = "Designing an assistive device to improve surgeon ergonomics during prolonged procedures."
-ergo-validate = "Validating effectiveness through EMG-based muscle fatigue analysis and computer-vision–based posture assessment."
-ergo-imu = "Conducted quantitative ergonomics studies of ENT surgeons using IMU (Opal V2R) and EMG (FREEEMG) sensor arrays; developing signal-processing pipelines for posture and mechanical-exposure analysis."
+yolo = "Training a deep learning model for surgical instrument recognition in endoscopic sinus and skull-base procedures, achieving 96.4% precision, 94.8% recall, and 96.6% mAP50 while expanding to new surgical datasets."
+ergo-device = "Designing an assistive device to improve surgeon ergonomics during prolonged procedures, validating effectiveness through EMG-based muscle fatigue analysis and computer-vision–based posture assessment."
+ergo-imu = "Conducting quantitative ergonomics studies of ENT surgeons using IMU (Opal V2R) and EMG (FREEEMG) sensor arrays; developing signal-processing pipelines for posture and mechanical-exposure analysis."
 
 [experience.shah.header]
 position = "Undergraduate Researcher"
@@ -168,10 +164,10 @@ start-date = "Sep 2023"
 end-date = "Present"
 
 [experience.shah.bullets]
-team-lead = "Leading a team of six students in developing an ultra-low-cost mobile robot for disposable field exploration."
-mentoring = "Mentoring team members in ROS 2, PCB design, electronics prototyping, and mechanical CAD."
+team-lead = "Leading a team of six students in developing an ultra-low-cost mobile robot for disposable field exploration, mentoring in ROS 2, PCB design, electronics prototyping, and mechanical CAD."
+exo-pcb = "Designed a wireless piezoresistive pressure sensor PCB, presented at the 2024 ASTM International Exo Games."
+robot-pcb = "Designed an integrated motor control, IMU, camera, and power management PCB for the ultra-low-cost robot."
 dual-arm = "Led development of a dual-arm robot; implemented motion-planning and web-based teleoperation in ROS 2."
-pcb = "Designed and fabricated a custom e-textile sensor PCB, presented at the 2024 ASTM International Exo Games."
 
 [experience.nyu.header]
 position = "Research Volunteer"
@@ -182,8 +178,7 @@ start-date = "Jun 2025"
 end-date = "Dec 2025"
 
 [experience.nyu.bullets]
-pipelines = "Built signal-processing and ML pipelines for vocalization analysis, including feature extraction and clustering."
-neural-models = "Trained deep neural models for syllable segmentation and classification."
+pipelines = "Built signal-processing and ML pipelines for vocalization analysis including feature extraction, clustering, and deep neural models for syllable segmentation and classification."
 robot = "Developed a ROS2-based automated bird-tutoring robot for minimally supervised vocal learning experiments."
 
 # Projects

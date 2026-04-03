@@ -140,7 +140,7 @@ start-date = "Jan 2025"
 end-date = "Present"
 
 [experience.mintchev.bullets]
-stdp = "Investigating spatial credit assignment in neoHebbian three-factor STDP spiking networks, mapping where synaptic learning converges, saturates, or fails across initial conditions, parameter space, and neuromodulatory signals conveying reward prediction error or novelty."
+stdp = "Studying temporal credit assignment in neoHebbian three-factor STDP networks: when a reward signal arrives seconds after neural activity and is broadcast to every synapse, mapping conditions for successful selective strengthening across parameter space, initial conditions, and neuromodulatory feedback regimes."
 
 [experience.sinai.header]
 position = "Research Volunteer"
@@ -151,8 +151,8 @@ start-date = "Feb 2024"
 end-date = "Present"
 
 [experience.sinai.bullets]
-yolo = "Training a deep learning model for surgical instrument recognition in endoscopic sinus and skull-base procedures, achieving 96.4% precision, 94.8% recall, and 96.6% mAP50 while expanding to new surgical datasets."
-ergo-device = "Designing an assistive device to improve surgeon ergonomics during prolonged procedures, validating effectiveness through EMG-based muscle fatigue analysis and computer-vision–based posture assessment."
+yolo = "Training an object detection model for surgical instrument recognition in endoscopic sinus and skull-base procedures; built end-to-end training and inference pipelines, achieving 96.4% precision and 94.8% recall."
+pharyvac = "Extending detection model to extract procedural metrics such as instrument usage duration and swap frequency."
 ergo-imu = "Conducting quantitative ergonomics studies of ENT surgeons using IMU (Opal V2R) and EMG (FREEEMG) sensor arrays; developing signal-processing pipelines for posture and mechanical-exposure analysis."
 
 [experience.shah.header]
@@ -182,6 +182,12 @@ pipelines = "Built signal-processing and ML pipelines for vocalization analysis 
 robot = "Developed a ROS2-based automated bird-tutoring robot for minimally supervised vocal learning experiments."
 
 # Projects
+
+[project.ergo.header]
+name = "Surgeon Ergonomics Assistive Device"
+
+[project.ergo.bullets]
+design = "Designing an assistive device to improve surgeon ergonomics during prolonged procedures, validating effectiveness through EMG-based muscle fatigue analysis and computer-vision–based posture assessment."
 
 [project.vlsi.header]
 name = "VLSI High Frequency Differential Operational Amplifier"

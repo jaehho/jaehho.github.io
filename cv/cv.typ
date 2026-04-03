@@ -56,7 +56,7 @@
 
 #work(..data.experience.sinai.header)[
 - #data.experience.sinai.bullets.yolo
-- #data.experience.sinai.bullets.ergo-device
+- #data.experience.sinai.bullets.pharyvac
 - #data.experience.sinai.bullets.ergo-imu
 ]
 
@@ -94,11 +94,20 @@
 - #data.project.vlsi.bullets.layout
 ]
 
+#project(name: data.project.ergo.header.name)[\
+- #data.project.ergo.bullets.design
+]
+
 #project(name: data.project.rf.header.name)[\
 - #data.project.rf.bullets.oscillator
 - #data.project.rf.bullets.mixer
 - #data.project.rf.bullets.filter
 - #data.project.rf.bullets.simulation
+]
+
+#project(name: data.project.flappy.header.name)[\
+- #data.project.flappy.bullets.design
+- #data.project.flappy.bullets.logic
 ]
 
 #project(name: data.project.theremin.header.name)[\

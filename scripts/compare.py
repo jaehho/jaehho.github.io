@@ -295,7 +295,7 @@ def main(
 ):
     """Compare CV/resume Typst documents to show structural differences."""
     if cv_dir is None:
-        cv_dir = Path(__file__).parent
+        cv_dir = Path(__file__).resolve().parent.parent / "cv"
 
     typ_files = sorted(
         f for f in cv_dir.glob("*.typ") if "shared" not in str(f.relative_to(cv_dir))

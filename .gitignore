@@ -1,3 +1,7 @@
 .venv
+build/
 *.pdf
+*.docx
+*.odt
 .~lock.*
+.playwright-mcp/

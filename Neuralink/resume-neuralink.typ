@@ -1,1 +1,0 @@
-../cv/resume-neuralink.typ

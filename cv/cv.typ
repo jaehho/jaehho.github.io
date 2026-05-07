@@ -48,6 +48,7 @@
 
 #work(..data.experience.thesis.header)[
 - #data.experience.thesis.bullets.lna
+- #data.experience.thesis.bullets.contribution
 ]
 
 #work(..data.experience.mintchev.header)[

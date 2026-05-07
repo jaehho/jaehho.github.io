@@ -129,7 +129,8 @@ start-date = "Jun 2025"
 end-date = "Present"
 
 [experience.thesis.bullets]
-lna = "Designing a chopper-stabilized low-noise amplifier in 65-nm CMOS for ultra-low-power brain–machine interfaces, achieving post-layout (PEX) verified 41 dB gain (0.6 Hz–5 kHz), 1.6 μW power, and noise-efficiency factor of 1.7."
+lna = "Designed a fully-differential chopper-stabilized capacitive-feedback pre-amplifier in TSMC 65-nm CMOS for ECoG and LFP recording over 1 Hz to 1 kHz, with 26.7 dB gain and 1.60 μVrms noise, drawing 2.30 μW from a 0.8 V supply for an NEF of 3.3 and a PEF of 8.7."
+contribution = "Achieved the lowest supply voltage and the lowest PEF among published chopper capacitive-feedback amplifiers, by biasing all signal-path devices in subthreshold, choosing NMOS for the second stage, setting branch current through CMFB equilibrium, and sizing CMFB resistors against gate-leakage current."
 
 [experience.mintchev.header]
 position = "Independent Researcher"
@@ -187,7 +188,7 @@ robot = "Developed a ROS2-based automated bird-tutoring robot for minimally supe
 name = "Surgeon Ergonomics Assistive Device"
 
 [project.ergo.bullets]
-design = "Designing an assistive device to improve surgeon ergonomics during prolonged procedures, validating effectiveness through EMG-based muscle fatigue analysis and computer-vision–based posture assessment."
+design = "Prototyping a motorized, impedance-controlled arm support that reduces muscle strain for surgeons during long procedures, validated by measuring muscle fatigue with EMG and posture with computer vision."
 
 [project.vlsi.header]
 name = "VLSI High Frequency Differential Operational Amplifier"

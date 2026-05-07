@@ -126,11 +126,11 @@ details = "Dr. Jabeom Koo"
 company = "The Cooper Union for the Advancement of Science and Art"
 location = "New York, NY"
 start-date = "Jun 2025"
-end-date = "Present"
+end-date = "May 2026"
 
 [experience.thesis.bullets]
-lna = "Designed a fully-differential chopper-stabilized capacitive-feedback pre-amplifier in TSMC 65-nm CMOS for ECoG and LFP recording over 1 Hz to 1 kHz, with 26.7 dB gain and 1.60 μVrms noise, drawing 2.30 μW from a 0.8 V supply for an NEF of 3.3 and a PEF of 8.7."
-contribution = "Achieved the lowest supply voltage and the lowest PEF among published chopper capacitive-feedback amplifiers, by biasing all signal-path devices in subthreshold, choosing NMOS for the second stage, setting branch current through CMFB equilibrium, and sizing CMFB resistors against gate-leakage current."
+lna = "Designed a fully-differential capacitive-feedback chopper-stabilized pre-amplifier in TSMC 65-nm CMOS for LFP recording over 1 Hz to 1 kHz, achieving 24.6 dB closed-loop gain and 2.96 μVrms input-referred noise on a 93.6 nV/√Hz thermal floor, drawing 2.30 μW from a 0.8 V supply for an NEF of 6.1 and a PEF of 29.8."
+contribution = "Achieved the lowest reported supply voltage among published chopper capacitive-feedback amplifiers in 65 nm by biasing all signal-path devices in subthreshold, choosing NMOS for the second stage against the stage-1 output common-mode voltage, setting stage-2 branch current through CMFB equilibrium rather than mirror ratio, and sizing resistive CMFB against 65-nm gate-leakage current."
 
 [experience.mintchev.header]
 position = "Independent Researcher"
@@ -162,7 +162,7 @@ details = "Dr. Mili Shah"
 company = "The Cooper Union for the Advancement of Science and Art"
 location = "New York, NY"
 start-date = "Sep 2023"
-end-date = "Present"
+end-date = "May 2026"
 
 [experience.shah.bullets]
 team-lead = "Leading a team of six students in developing an ultra-low-cost mobile robot for disposable field exploration, mentoring in ROS 2, PCB design, electronics prototyping, and mechanical CAD."

@@ -45,19 +45,19 @@
 
 == Research Experience
 
-#work(..data.experience.shah.header)[
-- #data.experience.shah.bullets.robot-pcb
-- #data.experience.shah.bullets.exo-pcb
-- #data.experience.shah.bullets.dual-arm
+#work(..data.experience.sinai.header)[
+- #data.experience.sinai.bullets.yolo
+- #data.experience.sinai.bullets.ergo-imu
 ]
 
 #work(..data.experience.thesis.header)[
 - #data.experience.thesis.bullets.lna
 ]
 
-#work(..data.experience.sinai.header)[
-- #data.experience.sinai.bullets.yolo
-- #data.experience.sinai.bullets.ergo-imu
+#work(..data.experience.shah.header)[
+- #data.experience.shah.bullets.robot-pcb
+- #data.experience.shah.bullets.exo-pcb
+- #data.experience.shah.bullets.dual-arm
 ]
 
 #work(..data.experience.nyu.header)[

@@ -46,11 +46,6 @@
 
 == Research Experience
 
-#work(..data.experience.thesis.header)[
-- #data.experience.thesis.bullets.lna
-- #data.experience.thesis.bullets.contribution
-]
-
 #work(..data.experience.mintchev.header)[
 - #data.experience.mintchev.bullets.stdp
 ]
@@ -59,6 +54,11 @@
 - #data.experience.sinai.bullets.yolo
 - #data.experience.sinai.bullets.pharyvac
 - #data.experience.sinai.bullets.ergo-imu
+]
+
+#work(..data.experience.thesis.header)[
+- #data.experience.thesis.bullets.lna
+- #data.experience.thesis.bullets.contribution
 ]
 
 #work(..data.experience.shah.header)[

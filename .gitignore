@@ -3,5 +3,10 @@ build/
 *.pdf
 *.docx
 *.odt
+*.pptx
 .~lock.*
 .playwright-mcp/
+__pycache__/
+
+# Served website assets — keep these despite the *.pdf rule above
+!docs/**/*.pdf
